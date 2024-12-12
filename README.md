@@ -13,7 +13,7 @@ This repository contains two components:
 Ensure you have this Java version installed:
 - **Java 23** 
 
-Ensure you have these extensions installed:
+Ensure you have these extensions installed in your VSC:
 - Spring Initializr Java Support 
 - Spring Boot Tools 
 - Spring Boot Extension pack
