@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HealthcareManagementApplication {
 
-	@GetMapping("/hello")
+	@GetMapping("/main")
     public String check() {
         return "Hello World There";
     }
