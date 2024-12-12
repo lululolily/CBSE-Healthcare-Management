@@ -16,7 +16,7 @@ Ensure you have these extensions installed:
 - Spring Initializr Java Support 
 - Spring Boot Tools 
 - Spring Boot Extension pack
-Refer `https://www.geeksforgeeks.org/how-to-build-spring-boot-project-in-vscode/`
+- Refer `https://www.geeksforgeeks.org/how-to-build-spring-boot-project-in-vscode/`
 
 ---
 
