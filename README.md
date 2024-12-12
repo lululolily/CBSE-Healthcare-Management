@@ -12,6 +12,7 @@ This repository contains two components:
 
 Ensure you have this Java version installed:
 - **Java 23** 
+
 Ensure you have these extensions installed:
 - Spring Initializr Java Support 
 - Spring Boot Tools 
