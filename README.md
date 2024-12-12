@@ -12,11 +12,12 @@ This repository contains two components:
 
 Ensure you have this Java version installed:
 - **Java 23** 
-Ensure you have these extensions installed:
+
+Ensure you have these extensions installed in your VSC:
 - Spring Initializr Java Support 
 - Spring Boot Tools 
 - Spring Boot Extension pack
-Refer `https://www.geeksforgeeks.org/how-to-build-spring-boot-project-in-vscode/`
+- Refer `https://www.geeksforgeeks.org/how-to-build-spring-boot-project-in-vscode/`
 
 ---
 
