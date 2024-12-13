@@ -119,5 +119,3 @@ The following guides provide examples of features used in the project:
 Due to Maven's inheritance model, elements such as `<license>` and `<developers>` from the parent POM are overridden. If switching to a different parent and you want these elements inherited, you may need to remove the empty overrides in the project POM.
 
 ---
-
-Feel free to update this README as your project evolves! Let me know if you'd like further assistance!
