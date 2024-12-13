@@ -1,10 +1,10 @@
-package org.cbse.project.healthcare_management;
+package com.example.healthcare;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class HealthcareManagementApplicationTests {
+class HealthcareApplicationTests {
 
 	@Test
 	void contextLoads() {
