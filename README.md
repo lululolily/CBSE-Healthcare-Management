@@ -1,5 +1,3 @@
-Here's an updated and structured README file for your project:
-
 ---
 
 # **Healthcare Management Project**
