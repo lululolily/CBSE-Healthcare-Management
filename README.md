@@ -7,8 +7,7 @@
 
 1. **Java Version**
 
-   - Ensure you have **Java 17** installed. _(Note: Update from "Java 23" if the target is Java 17 as used in the IDE configuration in the image.)_  
-     You can download Java from the [Official Java Website](https://www.oracle.com/java/technologies/javase-downloads.html).
+   "Ensure you have **Java 17** installed. _(Note: Update from 'Java 23' if the target is Java 17 as used in the IDE configuration in the image.)_"
 
 2. **VS Code Extensions**  
    Install the following extensions in Visual Studio Code for a smooth development experience:
