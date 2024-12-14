@@ -1,14 +1,5 @@
-
 ---
-
 # **Healthcare Management Project**
-
-This repository contains two components:
-
-1. **Spring Boot Component**: A RESTful API built using Spring Boot.
-2. **OSGi Component**: A modular service-based application.
-
----
 
 ## **Getting Started**
 
@@ -41,7 +32,7 @@ CREATE DATABASE healthcare;
 
 ---
 
-### **Configure `application.properties`**
+### **Configure `application.properties` and `AppConfig.java`**
 
 1. Update your **`src/main/resources/application.properties`** with the following configuration:
 
@@ -54,22 +45,38 @@ spring.datasource.username=your_database_username
 spring.datasource.password=your_database_password
 spring.jpa.hibernate.ddl-auto=update
 
-# Email Configuration (Gmail)
-spring.mail.host=smtp.gmail.com
-spring.mail.port=587
-spring.mail.username=your_email@gmail.com
-spring.mail.password=your_email_password
-spring.mail.properties.mail.smtp.auth=true
-spring.mail.properties.mail.smtp.starttls.enable=true
-
 # Server Configuration
 server.port=8080
 
 ```
 
 2. Replace:
+
    - `your_database_username` and `your_database_password` with your MySQL credentials.
    - `your_email@example.com` and `your_smtp_password` with your SMTP credentials.
+
+3. Update the `AppConfig.java` class as follows:
+
+```java
+@Bean
+public JavaMailSender javaMailSender() {
+    JavaMailSenderImpl mailSender = new JavaMailSenderImpl();
+    mailSender.setHost("smtp.gmail.com");  // Change to your SMTP host
+    mailSender.setPort(587);              // Change to your SMTP port
+    mailSender.setUsername("your_email@gmail.com");  // Replace with your email
+    mailSender.setPassword("your_email_password");   // Replace with your email password
+
+    Properties props = mailSender.getJavaMailProperties();
+    props.put("mail.transport.protocol", "smtp");
+    props.put("mail.smtp.auth", "true");
+    props.put("mail.smtp.starttls.enable", "true");
+    props.put("mail.debug", "true");  // Optional for debugging email
+
+    return mailSender;
+}
+```
+
+- Update the values in `mailSender.setHost`, `mailSender.setPort`, `mailSender.setUsername`, and `mailSender.setPassword` with your SMTP provider's settings.
 
 ---
 
@@ -88,6 +95,27 @@ server.port=8080
    ```
 
 3. Application URL at [http://localhost:8080](http://localhost:8080).
+
+---
+
+### **API Testing with Postman**
+
+For testing the APIs of this project, a Postman collection has been included in the repository. The collection is named:
+
+**`Healthcare Management (Spring Boot).postman_collection.json`**
+
+#### **How to Import the Collection into Postman**
+
+1. Open Postman.
+2. Click on the **Import** button (top left corner).
+3. Select the **`Healthcare Management (Spring Boot).postman_collection.json`** file from the repository.
+4. Once imported, you will see the collection listed under **Collections** in Postman.
+
+#### **Using the Collection**
+
+- Each request in the collection is pre-configured with the necessary endpoints.
+- Update the variables such as `localhost` or `server port` if your application is running on a custom port or domain.
+- You can test the endpoints directly after running the Spring Boot application by hitting [http://localhost:8080](http://localhost:8080) or the respective API URL.
 
 ---
 

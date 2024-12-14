@@ -17,12 +17,14 @@ public class Appointment {
     @JoinColumn(name = "patient_id", referencedColumnName = "id")
     private Patient patient;
 
-    private LocalDateTime appointmentStartTime; // Start time of the appointment
-    private LocalDateTime appointmentEndTime;   // End time of the appointment
+    private LocalDateTime appointmentTime;
+
     private String reason;
     private String status;
 
     private String patientNotes;
+    
+    private boolean reminderSent;
 
     // Getters and Setters
     public Long getId() {
@@ -49,20 +51,12 @@ public class Appointment {
         this.patient = patient;
     }
 
-    public LocalDateTime getAppointmentStartTime() {
-        return appointmentStartTime;
+    public LocalDateTime getAppointmentTime() {
+        return appointmentTime;
     }
 
-    public void setAppointmentStartTime(LocalDateTime appointmentStartTime) {
-        this.appointmentStartTime = appointmentStartTime;
-    }
-
-    public LocalDateTime getAppointmentEndTime() {
-        return appointmentEndTime;
-    }
-
-    public void setAppointmentEndTime(LocalDateTime appointmentEndTime) {
-        this.appointmentEndTime = appointmentEndTime;
+    public void setAppointmentTime(LocalDateTime appointmentTime) {
+        this.appointmentTime = appointmentTime;
     }
 
     public String getReason() {
@@ -87,5 +81,13 @@ public class Appointment {
 
     public void setPatientNotes(String patientNotes) {
         this.patientNotes = patientNotes;
+    }
+    
+    public boolean isReminderSent() {
+        return reminderSent;
+    }
+
+    public void setReminderSent(boolean reminderSent) {
+        this.reminderSent = reminderSent;
     }
 }

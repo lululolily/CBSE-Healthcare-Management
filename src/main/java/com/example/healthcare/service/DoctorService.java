@@ -1,6 +1,7 @@
 package com.example.healthcare.service;
 
 import com.example.healthcare.dto.DoctorDTO;
+import com.example.healthcare.interfaces.IManageDoctor;
 import com.example.healthcare.model.Doctor;
 import com.example.healthcare.repository.DoctorRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,7 +10,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class DoctorService {
+public class DoctorService implements IManageDoctor {
 
     @Autowired
     private DoctorRepository doctorRepository;

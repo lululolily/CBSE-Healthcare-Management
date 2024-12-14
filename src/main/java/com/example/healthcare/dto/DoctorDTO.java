@@ -1,9 +1,6 @@
 package com.example.healthcare.dto;
 
 import java.time.LocalTime;
-import java.time.LocalDate;
-import java.util.Map;
-import java.util.List;
 
 public class DoctorDTO {
     private Long id;

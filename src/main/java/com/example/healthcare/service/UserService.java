@@ -1,5 +1,6 @@
 package com.example.healthcare.service;
 
+import com.example.healthcare.interfaces.IAuthenticateUser;
 import com.example.healthcare.model.*;
 import com.example.healthcare.repository.*;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,7 +11,7 @@ import java.time.LocalTime;
 import java.time.format.DateTimeParseException;
 
 @Service
-public class UserService {
+public class UserService implements IAuthenticateUser {
 
     @Autowired
     private UserRepository userRepository;
@@ -24,12 +25,13 @@ public class UserService {
     @Autowired
     private PasswordEncoder passwordEncoder;
 
-    public User registerUser(String username, String password, String role, String firstName, String lastName, String contactNumber, String specialization, String email, String workingHoursStart, String workingHoursEnd) {
+    public User registerUser(String username, String password, String role, String firstName, 
+    		String lastName, String contactNumber, String specialization, String email, 
+    		String workingHoursStart, String workingHoursEnd) {
         if (userRepository.existsByUsername(username)) {
             throw new RuntimeException("Username already exists");
         }
 
-        // Create and save the User entity
         User user = new User();
         user.setUsername(username);
         user.setPassword(passwordEncoder.encode(password));
@@ -37,7 +39,6 @@ public class UserService {
         userRepository.save(user);
 
         if (role.equalsIgnoreCase("doctor")) {
-            // Validate and parse working hours
             LocalTime startTime = null;
             LocalTime endTime = null;
 

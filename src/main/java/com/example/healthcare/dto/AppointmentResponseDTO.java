@@ -6,8 +6,7 @@ public class AppointmentResponseDTO {
     private Long appointmentId;
     private String doctorName;
     private String patientName;
-    private LocalDateTime appointmentStartTime;
-    private LocalDateTime appointmentEndTime; 
+    private LocalDateTime appointmentTime;
     private String reason;
     private String status;
 
@@ -36,21 +35,13 @@ public class AppointmentResponseDTO {
         this.patientName = patientName;
     }
 
-    public LocalDateTime getAppointmentStartTime() {
-        return appointmentStartTime;
-    }
+    public LocalDateTime getAppointmentTime() {
+		return appointmentTime;
+	}
 
-    public void setAppointmentStartTime(LocalDateTime appointmentStartTime) {
-        this.appointmentStartTime = appointmentStartTime;
-    }
-
-    public LocalDateTime getAppointmentEndTime() {
-        return appointmentEndTime;
-    }
-
-    public void setAppointmentEndTime(LocalDateTime appointmentEndTime) {
-        this.appointmentEndTime = appointmentEndTime;
-    }
+	public void setAppointmentTime(LocalDateTime appointmentTime) {
+		this.appointmentTime = appointmentTime;
+	}
 
     public String getReason() {
         return reason;

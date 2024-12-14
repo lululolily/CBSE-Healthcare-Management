@@ -2,7 +2,6 @@ package com.example.healthcare.model;
 
 import jakarta.persistence.*;
 import java.time.LocalTime;
-import java.time.LocalDate;
 import java.util.List;
 
 @Entity

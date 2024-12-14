@@ -23,8 +23,7 @@ public class AppointmentController {
         Appointment appointment = appointmentService.createAppointment(
             request.getDoctorId(),
             request.getPatientId(),
-            request.getAppointmentStartTime(),
-            request.getAppointmentEndTime(),
+            request.getAppointmentTime(),
             request.getReason()
         );
 
@@ -32,8 +31,7 @@ public class AppointmentController {
         response.setAppointmentId(appointment.getId());
         response.setDoctorName(appointment.getDoctor().getFirstName() + " " + appointment.getDoctor().getLastName());
         response.setPatientName(appointment.getPatient().getFirstName() + " " + appointment.getPatient().getLastName());
-        response.setAppointmentStartTime(appointment.getAppointmentStartTime());
-        response.setAppointmentEndTime(appointment.getAppointmentEndTime());
+        response.setAppointmentTime(appointment.getAppointmentTime());
         response.setReason(appointment.getReason());
         response.setStatus(appointment.getStatus());
 
@@ -45,7 +43,14 @@ public class AppointmentController {
         appointmentService.acceptAppointment(id);
         return ResponseEntity.ok("Appointment with ID " + id + " has been accepted");
     }
-
+    
+    @PutMapping("/{id}/reject")
+    public ResponseEntity<String> rejectAppointment(
+            @PathVariable Long id,
+            @RequestParam String reason) {
+        appointmentService.rejectAppointment(id, reason);
+        return ResponseEntity.ok("Appointment with ID " + id + " has been rejected for reason: " + reason);
+    }
 
     @PutMapping("/{id}/cancel")
     public ResponseEntity<String> cancelAppointment(@PathVariable Long id) {
@@ -59,16 +64,14 @@ public class AppointmentController {
             @RequestBody AppointmentRequestDTO request) {
         Appointment updatedAppointment = appointmentService.rescheduleAppointment(
                 id,
-                request.getAppointmentStartTime(),
-                request.getAppointmentEndTime()
+                request.getAppointmentTime()
         );
 
         AppointmentResponseDTO response = new AppointmentResponseDTO();
         response.setAppointmentId(updatedAppointment.getId());
         response.setDoctorName(updatedAppointment.getDoctor().getFirstName() + " " + updatedAppointment.getDoctor().getLastName());
         response.setPatientName(updatedAppointment.getPatient().getFirstName() + " " + updatedAppointment.getPatient().getLastName());
-        response.setAppointmentStartTime(updatedAppointment.getAppointmentStartTime());
-        response.setAppointmentEndTime(updatedAppointment.getAppointmentEndTime());
+        response.setAppointmentTime(updatedAppointment.getAppointmentTime());
         response.setReason(updatedAppointment.getReason());
         response.setStatus(updatedAppointment.getStatus());
 
@@ -77,16 +80,59 @@ public class AppointmentController {
 
 
     @GetMapping("/patient/{patientId}")
-    public ResponseEntity<List<AppointmentResponseDTO>> getAppointmentsByPatient(@PathVariable Long patientId) {
-        List<Appointment> appointments = appointmentService.getAppointmentsByPatient(patientId);
+    public ResponseEntity<List<AppointmentResponseDTO>> getAppointmentsByPatient(
+            @PathVariable Long patientId,
+            @RequestParam(value = "filter", required = false) String filter) {
+        List<Appointment> appointments;
+
+        // Apply filter based on the query parameter
+        if ("daily".equalsIgnoreCase(filter)) {
+            appointments = appointmentService.getAppointmentsByPatientDaily(patientId);
+        } else if ("weekly".equalsIgnoreCase(filter)) {
+            appointments = appointmentService.getAppointmentsByPatientWeekly(patientId);
+        } else if ("monthly".equalsIgnoreCase(filter)) {
+            appointments = appointmentService.getAppointmentsByPatientMonthly(patientId);
+        } else {
+            appointments = appointmentService.getAppointmentsByPatient(patientId);
+        }
 
         List<AppointmentResponseDTO> response = appointments.stream().map(appointment -> {
             AppointmentResponseDTO dto = new AppointmentResponseDTO();
             dto.setAppointmentId(appointment.getId());
             dto.setDoctorName(appointment.getDoctor().getFirstName() + " " + appointment.getDoctor().getLastName());
             dto.setPatientName(appointment.getPatient().getFirstName() + " " + appointment.getPatient().getLastName());
-            dto.setAppointmentStartTime(appointment.getAppointmentStartTime());
-            dto.setAppointmentEndTime(appointment.getAppointmentEndTime());
+            dto.setAppointmentTime(appointment.getAppointmentTime());
+            dto.setReason(appointment.getReason());
+            dto.setStatus(appointment.getStatus());
+            return dto;
+        }).collect(Collectors.toList());
+
+        return ResponseEntity.ok(response);
+    }
+
+    @GetMapping("/doctor/{doctorId}")
+    public ResponseEntity<List<AppointmentResponseDTO>> getAppointmentsByDoctor(
+            @PathVariable Long doctorId,
+            @RequestParam(value = "filter", required = false) String filter) {
+        List<Appointment> appointments;
+
+        // Apply filter based on the query parameter
+        if ("daily".equalsIgnoreCase(filter)) {
+            appointments = appointmentService.getAppointmentsByDoctorDaily(doctorId);
+        } else if ("weekly".equalsIgnoreCase(filter)) {
+            appointments = appointmentService.getAppointmentsByDoctorWeekly(doctorId);
+        } else if ("monthly".equalsIgnoreCase(filter)) {
+            appointments = appointmentService.getAppointmentsByDoctorMonthly(doctorId);
+        } else {
+            appointments = appointmentService.getAppointmentsByDoctor(doctorId);
+        }
+
+        List<AppointmentResponseDTO> response = appointments.stream().map(appointment -> {
+            AppointmentResponseDTO dto = new AppointmentResponseDTO();
+            dto.setAppointmentId(appointment.getId());
+            dto.setDoctorName(appointment.getDoctor().getFirstName() + " " + appointment.getDoctor().getLastName());
+            dto.setPatientName(appointment.getPatient().getFirstName() + " " + appointment.getPatient().getLastName());
+            dto.setAppointmentTime(appointment.getAppointmentTime());
             dto.setReason(appointment.getReason());
             dto.setStatus(appointment.getStatus());
             return dto;

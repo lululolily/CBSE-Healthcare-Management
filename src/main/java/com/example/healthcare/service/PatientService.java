@@ -1,13 +1,14 @@
 package com.example.healthcare.service;
 
 import com.example.healthcare.dto.PatientDTO;
+import com.example.healthcare.interfaces.IManagePatient;
 import com.example.healthcare.model.Patient;
 import com.example.healthcare.repository.PatientRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
-public class PatientService {
+public class PatientService implements IManagePatient {
 
     @Autowired
     private PatientRepository patientRepository;

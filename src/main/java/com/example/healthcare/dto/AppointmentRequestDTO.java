@@ -5,8 +5,7 @@ import java.time.LocalDateTime;
 public class AppointmentRequestDTO {
     private Long doctorId;
     private Long patientId;
-    private LocalDateTime appointmentStartTime;
-    private LocalDateTime appointmentEndTime;
+    private LocalDateTime appointmentTime; 
     private String reason;
 
     // Getters and Setters
@@ -26,22 +25,14 @@ public class AppointmentRequestDTO {
         this.patientId = patientId;
     }
 
-    public LocalDateTime getAppointmentStartTime() {
-        return appointmentStartTime;
-    }
+	public LocalDateTime getAppointmentTime() {
+		return appointmentTime;
+	}
 
-    public void setAppointmentStartTime(LocalDateTime appointmentStartTime) {
-        this.appointmentStartTime = appointmentStartTime;
-    }
-
-    public LocalDateTime getAppointmentEndTime() {
-        return appointmentEndTime;
-    }
-
-    public void setAppointmentEndTime(LocalDateTime appointmentEndTime) {
-        this.appointmentEndTime = appointmentEndTime;
-    }
-
+	public void setAppointmentTime(LocalDateTime appointmentTime) {
+		this.appointmentTime = appointmentTime;
+	}
+	
     public String getReason() {
         return reason;
     }
