@@ -2,8 +2,9 @@ package com.example.healthcare.controller;
 
 import com.example.healthcare.dto.AppointmentRequestDTO;
 import com.example.healthcare.dto.AppointmentResponseDTO;
+import com.example.healthcare.interfaces.IManageAppointmentRequest;
+import com.example.healthcare.interfaces.IViewAppointment;
 import com.example.healthcare.model.Appointment;
-import com.example.healthcare.service.AppointmentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -16,11 +17,14 @@ import java.util.stream.Collectors;
 public class AppointmentController {
 
     @Autowired
-    private AppointmentService appointmentService;
+    private IManageAppointmentRequest appointmentManager;
+
+    @Autowired
+    private IViewAppointment appointmentViewer;
 
     @PostMapping("/create")
     public ResponseEntity<AppointmentResponseDTO> createAppointment(@RequestBody AppointmentRequestDTO request) {
-        Appointment appointment = appointmentService.createAppointment(
+        Appointment appointment = appointmentManager.createAppointment(
             request.getDoctorId(),
             request.getPatientId(),
             request.getAppointmentTime(),
@@ -40,7 +44,7 @@ public class AppointmentController {
     
     @PutMapping("/{id}/accept")
     public ResponseEntity<String> acceptAppointment(@PathVariable Long id) {
-        appointmentService.acceptAppointment(id);
+        appointmentManager.acceptAppointment(id);
         return ResponseEntity.ok("Appointment with ID " + id + " has been accepted");
     }
     
@@ -48,13 +52,13 @@ public class AppointmentController {
     public ResponseEntity<String> rejectAppointment(
             @PathVariable Long id,
             @RequestParam String reason) {
-        appointmentService.rejectAppointment(id, reason);
+        appointmentManager.rejectAppointment(id, reason);
         return ResponseEntity.ok("Appointment with ID " + id + " has been rejected for reason: " + reason);
     }
 
     @PutMapping("/{id}/cancel")
     public ResponseEntity<String> cancelAppointment(@PathVariable Long id) {
-        appointmentService.cancelAppointment(id);
+        appointmentManager.cancelAppointment(id);
         return ResponseEntity.ok("Appointment with ID " + id + " has been canceled");
     }
 
@@ -62,7 +66,7 @@ public class AppointmentController {
     public ResponseEntity<AppointmentResponseDTO> rescheduleAppointment(
             @PathVariable Long id,
             @RequestBody AppointmentRequestDTO request) {
-        Appointment updatedAppointment = appointmentService.rescheduleAppointment(
+        Appointment updatedAppointment = appointmentManager.rescheduleAppointment(
                 id,
                 request.getAppointmentTime()
         );
@@ -87,13 +91,13 @@ public class AppointmentController {
 
         // Apply filter based on the query parameter
         if ("daily".equalsIgnoreCase(filter)) {
-            appointments = appointmentService.getAppointmentsByPatientDaily(patientId);
+            appointments = appointmentViewer.getAppointmentsByPatientDaily(patientId);
         } else if ("weekly".equalsIgnoreCase(filter)) {
-            appointments = appointmentService.getAppointmentsByPatientWeekly(patientId);
+            appointments = appointmentViewer.getAppointmentsByPatientWeekly(patientId);
         } else if ("monthly".equalsIgnoreCase(filter)) {
-            appointments = appointmentService.getAppointmentsByPatientMonthly(patientId);
+            appointments = appointmentViewer.getAppointmentsByPatientMonthly(patientId);
         } else {
-            appointments = appointmentService.getAppointmentsByPatient(patientId);
+            appointments = appointmentViewer.getAppointmentsByPatient(patientId);
         }
 
         List<AppointmentResponseDTO> response = appointments.stream().map(appointment -> {
@@ -118,13 +122,13 @@ public class AppointmentController {
 
         // Apply filter based on the query parameter
         if ("daily".equalsIgnoreCase(filter)) {
-            appointments = appointmentService.getAppointmentsByDoctorDaily(doctorId);
+            appointments = appointmentViewer.getAppointmentsByDoctorDaily(doctorId);
         } else if ("weekly".equalsIgnoreCase(filter)) {
-            appointments = appointmentService.getAppointmentsByDoctorWeekly(doctorId);
+            appointments = appointmentViewer.getAppointmentsByDoctorWeekly(doctorId);
         } else if ("monthly".equalsIgnoreCase(filter)) {
-            appointments = appointmentService.getAppointmentsByDoctorMonthly(doctorId);
+            appointments = appointmentViewer.getAppointmentsByDoctorMonthly(doctorId);
         } else {
-            appointments = appointmentService.getAppointmentsByDoctor(doctorId);
+            appointments = appointmentViewer.getAppointmentsByDoctor(doctorId);
         }
 
         List<AppointmentResponseDTO> response = appointments.stream().map(appointment -> {
