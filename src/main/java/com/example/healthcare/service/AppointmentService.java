@@ -115,12 +115,11 @@ public class AppointmentService implements IManageAppointmentRequest, IViewAppoi
     public void cancelAppointment(Long appointmentId) {
         Appointment appointment = appointmentRepository.findById(appointmentId)
                 .orElseThrow(() -> new RuntimeException("Appointment not found"));
-        appointment.setStatus("CANCELLED");
         
         if ("CANCELLED".equals(appointment.getStatus())) {
         	throw new RuntimeException("Appointment has already been cancelled");
         }
-        
+        appointment.setStatus("CANCELLED");
         appointmentRepository.save(appointment);
     }
     
