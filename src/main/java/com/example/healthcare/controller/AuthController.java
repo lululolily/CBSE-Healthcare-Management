@@ -2,8 +2,8 @@ package com.example.healthcare.controller;
 
 import com.example.healthcare.dto.LoginRequestDTO;
 import com.example.healthcare.dto.RegisterRequestDTO;
+import com.example.healthcare.interfaces.IAuthenticateUser;
 import com.example.healthcare.model.User;
-import com.example.healthcare.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -13,11 +13,11 @@ import org.springframework.web.bind.annotation.*;
 public class AuthController {
 
     @Autowired
-    private UserService userService;
+    private IAuthenticateUser userAuth;
 
     @PostMapping("/register")
     public ResponseEntity<String> registerUser(@RequestBody RegisterRequestDTO request) {
-        userService.registerUser(
+        userAuth.registerUser(
             request.getUsername(),
             request.getPassword(),
             request.getRole(),
@@ -34,7 +34,7 @@ public class AuthController {
 
     @PostMapping("/login")
     public ResponseEntity<String> loginUser(@RequestBody LoginRequestDTO request) {
-        User user = userService.authenticateUser(request.getUsername(), request.getPassword());
+        User user = userAuth.authenticateUser(request.getUsername(), request.getPassword());
         return ResponseEntity.ok("Login successful for user: " + user.getUsername());
     }
 }

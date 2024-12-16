@@ -1,8 +1,8 @@
 package com.example.healthcare.controller;
 
 import com.example.healthcare.dto.PatientDTO;
+import com.example.healthcare.interfaces.IManagePatient;
 import com.example.healthcare.model.Patient;
-import com.example.healthcare.service.PatientService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -12,11 +12,11 @@ import org.springframework.web.bind.annotation.*;
 public class PatientController {
 
     @Autowired
-    private PatientService patientService;
+    private IManagePatient patientManager;
 
     @GetMapping("/{id}")
     public ResponseEntity<PatientDTO> getPatientById(@PathVariable Long id) {
-        Patient patient = patientService.getPatientById(id);
+        Patient patient = patientManager.getPatientById(id);
 
         PatientDTO response = new PatientDTO();
         response.setId(patient.getId());
@@ -30,7 +30,7 @@ public class PatientController {
 
     @PutMapping("/{id}")
     public ResponseEntity<String> updatePatient(@PathVariable Long id, @RequestBody PatientDTO patientDTO) {
-        patientService.updatePatientProfile(id, patientDTO);
+        patientManager.updatePatientProfile(id, patientDTO);
         return ResponseEntity.ok("Patient profile updated successfully");
     }
 }

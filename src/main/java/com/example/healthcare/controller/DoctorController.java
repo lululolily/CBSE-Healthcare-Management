@@ -1,10 +1,10 @@
 package com.example.healthcare.controller;
 
 import com.example.healthcare.dto.DoctorDTO;
+import com.example.healthcare.interfaces.IManageAppointmentRequest;
+import com.example.healthcare.interfaces.IManageAvailability;
+import com.example.healthcare.interfaces.IManageDoctor;
 import com.example.healthcare.model.Doctor;
-import com.example.healthcare.service.AppointmentService;
-import com.example.healthcare.service.DoctorService;
-import com.example.healthcare.service.DoctorUnavailabilityService;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -21,17 +21,17 @@ import java.time.LocalDateTime;
 public class DoctorController {
 
     @Autowired
-    private DoctorService doctorService;
+    private IManageDoctor dockerManager;
     
     @Autowired
-    private DoctorUnavailabilityService unavailabilityService;
+    private IManageAvailability availabilityManager;
     
     @Autowired
-    private AppointmentService appointmentService;
+    private IManageAppointmentRequest appointmentManager;
 
     @GetMapping("/{id}")
     public ResponseEntity<DoctorDTO> getDoctorById(@PathVariable Long id) {
-        Doctor doctor = doctorService.getDoctorById(id);
+        Doctor doctor = dockerManager.getDoctorById(id);
 
         DoctorDTO response = new DoctorDTO();
         response.setId(doctor.getId());
@@ -48,13 +48,13 @@ public class DoctorController {
 
     @PutMapping("/{id}")
     public ResponseEntity<String> updateDoctor(@PathVariable Long id, @RequestBody DoctorDTO doctorDTO) {
-        doctorService.updateDoctorProfile(id, doctorDTO);
+        dockerManager.updateDoctorProfile(id, doctorDTO);
         return ResponseEntity.ok("Doctor profile updated successfully");
     }
 
     @GetMapping("/specialization/{specialization}")
     public ResponseEntity<List<DoctorDTO>> getDoctorsBySpecialization(@PathVariable String specialization) {
-        List<Doctor> doctors = doctorService.getDoctorsBySpecialization(specialization);
+        List<Doctor> doctors = dockerManager.getDoctorsBySpecialization(specialization);
 
         List<DoctorDTO> response = doctors.stream().map(doctor -> {
             DoctorDTO dto = new DoctorDTO();
@@ -73,7 +73,7 @@ public class DoctorController {
     
     @PutMapping("/{id}/working-hours")
     public ResponseEntity<String> updateWorkingHours(@PathVariable Long id, @RequestBody DoctorDTO doctorDTO) {
-        doctorService.updateDoctorProfile(id, doctorDTO);
+        dockerManager.updateDoctorProfile(id, doctorDTO);
         return ResponseEntity.ok("Doctor working hours updated successfully");
     }
     
@@ -81,7 +81,7 @@ public class DoctorController {
     public ResponseEntity<List<LocalDateTime>> getAvailableSlots(
             @PathVariable Long doctorId,
             @RequestParam LocalDate date) {
-        List<LocalDateTime> availableSlots = appointmentService.getAvailableSlots(doctorId, date);
+        List<LocalDateTime> availableSlots = appointmentManager.getAvailableSlots(doctorId, date);
         return ResponseEntity.ok(availableSlots);
     }
 
@@ -94,7 +94,7 @@ public class DoctorController {
         LocalDateTime to = request.get("to");
 
         try {
-            unavailabilityService.addUnavailability(id, from, to);
+            availabilityManager.addUnavailability(id, from, to);
             return ResponseEntity.ok("Unavailability period added successfully");
         } catch (RuntimeException ex) {
             return ResponseEntity.badRequest().body(ex.getMessage());
