@@ -82,14 +82,6 @@ public class Appointment {
     public void setStatus(AppointmentStatus status) {
         this.status = status;
     }
-
-    public boolean isReminderSent() {
-        return reminderSent;
-    }
-
-    public void setReminderSent(boolean reminderSent) {
-        this.reminderSent = reminderSent;
-    }
     
     public void DoctorAvailability(String doctorId, LocalDateTime unavailableFrom, LocalDateTime unavailableTo) {
         this.doctorId = doctorId;
@@ -111,6 +103,14 @@ public class Appointment {
 
     public void setUnavailableTo(LocalDateTime unavailableTo) {
         this.unavailableTo = unavailableTo;
+    }
+    
+    public boolean isReminderSent() {
+        return reminderSent;
+    }
+
+    public void setReminderSent(boolean reminderSent) {
+        this.reminderSent = reminderSent;
     }
 
     @Override

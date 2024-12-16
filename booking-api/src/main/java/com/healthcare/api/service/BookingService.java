@@ -12,4 +12,5 @@ public interface BookingService {
     void acceptAppointment(String appointmentId);
     void rejectAppointment(String appointmentId);
     void setAvailability(String doctorId, String unavailabilityFrom, String unavailabilityTo);
+    void sendReminder(String appointmentId);
 }

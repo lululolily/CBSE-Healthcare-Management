@@ -30,6 +30,7 @@ public class Activator implements BundleActivator {
         if (!runDoctorRoleTest) {
             // Run patient role test
             System.out.println("Running test for Patient role...");
+            checkAndSendReminders(bookingService);
             runPatientRoleTest(bookingService);
         } else {
             // Run doctor role test
@@ -49,24 +50,33 @@ public class Activator implements BundleActivator {
             System.out.println("Booking Service Unregistered.");
         }
     }
+    
+    private void checkAndSendReminders(BookingService bookingService) {
+        List<Appointment> appointments = bookingService.viewAppointments();
+
+        // Loop through all appointments and send reminders if within 24 hours
+        for (Appointment appointment : appointments) {
+            bookingService.sendReminder(appointment.getId());
+        }
+    }
 
     // Method to test the patient role
     private void runPatientRoleTest(BookingService bookingService) {
         // Hardcoded Appointment Data for Patient Role
         Appointment appointment1 = new Appointment(
             UUID.randomUUID().toString(),  // id
-            "Doctor Lutfil",                   // doctorId
-            "Patient Jee",                  // patientId
-            "I am sick for 90 days",             // patientNotes
-            "sick",                    // reason
-            "2024-12-20 10:30"             // dateTime
+            "Dr. Colin",                   // doctorId
+            "Jakarta Java",                  // patientId
+            "I am sick, I feel very bad",             // patientNotes
+            "illness",                    // reason
+            "2024-12-20 10:00"             // dateTime
         );
 
         Appointment appointment2 = new Appointment(
             UUID.randomUUID().toString(),  // id
-            "Doctor Danish",                   // doctorId
-            "Patient Octopus",                  // patientId
-            "Hi Doctor",             // patientNotes
+            "Dr. Daniel",                   // doctorId
+            "Mary Jetty",                  // patientId
+            "No notes",             // patientNotes
             "Headache",                    // reason
             "2024-12-21 11:00"             // dateTime
         );
@@ -78,7 +88,6 @@ public class Activator implements BundleActivator {
         // View Appointments
         System.out.println("\n=== Current Appointments ===");
         List<Appointment> currentAppointments = bookingService.viewAppointments();
-        System.out.println("\n=== Updated Appointments ===");
         if (currentAppointments.isEmpty()) {
             System.out.println("No appointments available.\n");
         } else {
@@ -124,18 +133,18 @@ public class Activator implements BundleActivator {
     private void runDoctorRoleTest(BookingService bookingService) {
         Appointment appointment1 = new Appointment(
                 UUID.randomUUID().toString(),  // id
-                "Doctor Ali Akar",                   // doctorId
-                "Patient Abu",                  // patientId
-                "No note for now",             // patientNotes
+                "Dr. Ali Akar",                   // doctorId
+                "Abu Masa",                  // patientId
+                "can you suggest me some way to cure my cold",             // patientNotes
                 "sick",                    // reason
-                "2024-12-23 13:30"             // dateTime
+                "2024-12-23 13:00"             // dateTime
             );
 
         Appointment appointment2 = new Appointment(
             UUID.randomUUID().toString(),  // id
-            "Doctor Ali Akar",                   // doctorId
-            "Patient C",                  // patientId
-            ".....",             // patientNotes
+            "Dr. Ali Akar",                   // doctorId
+            "Bobby Nutella",                  // patientId
+            "no note",             // patientNotes
             "Serious Flu",                    // reason
             "2024-12-24 14:00"             // dateTime
         );
@@ -154,7 +163,7 @@ public class Activator implements BundleActivator {
         String unavailabilityTo = "2024-12-23 12:00";
         
         // Set availability
-        bookingService.setAvailability("Doctor Ali Akar", unavailabilityFrom, unavailabilityTo);
+        bookingService.setAvailability("Dr. Ali Akar", unavailabilityFrom, unavailabilityTo);
     }
 }
 

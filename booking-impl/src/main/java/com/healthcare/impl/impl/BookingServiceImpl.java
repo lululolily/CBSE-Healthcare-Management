@@ -4,10 +4,28 @@ import com.healthcare.api.model.Appointment;
 import com.healthcare.api.model.AppointmentStatus;
 import com.healthcare.api.service.BookingService;
 
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.time.temporal.ChronoUnit;
 import java.util.*;
 
 public class BookingServiceImpl implements BookingService {
     private final List<Appointment> appointments = new ArrayList<>();
+    
+    public BookingServiceImpl() {
+        // Pre-create an appointment for tomorrow (2024-12-18 11:00)
+        Appointment tomorrowAppointment = new Appointment(
+            UUID.randomUUID().toString(),
+            "Dr. Ali Akar",
+            "Jenuine Lee",
+            "I am sick",
+            "sick",
+            "2024-12-18 11:00"
+        );
+        
+        // Add to the appointments list
+        appointments.add(tomorrowAppointment);
+    }
 
     @Override
     public void bookAppointment(Appointment appointment) {
@@ -94,6 +112,33 @@ public class BookingServiceImpl implements BookingService {
 
         // You could save these details in a list or database, for example.
         // Here, we're just printing out the values to demonstrate the method functionality.
+    }
+    
+    @Override
+    public void sendReminder(String appointmentId) {
+        Appointment appointment = findAppointmentById(appointmentId);
+        if (appointment == null) {
+            System.out.println("Appointment not found.");
+            return;
+        }
+
+        // Check if the appointment is within 24 hours from now
+        LocalDateTime appointmentTime = LocalDateTime.parse(appointment.getDateTime(), DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm"));
+        LocalDateTime now = LocalDateTime.now();
+
+        if (appointmentTime.isAfter(now) && appointmentTime.isBefore(now.plusHours(24))) {
+            System.out.println("Reminder: Your appointment with " + appointment.getDoctorId() + " is scheduled for tomorrow at " + appointment.getDateTime());
+            appointment.setReminderSent(true);
+        } else {
+        }
+    }
+
+    // Helper method to find an appointment by ID
+    private Appointment findAppointmentById(String appointmentId) {
+        return appointments.stream()
+            .filter(appt -> appt.getId().equals(appointmentId))
+            .findFirst()
+            .orElse(null);
     }
 }
 
