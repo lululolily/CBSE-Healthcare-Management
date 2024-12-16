@@ -1,0 +1,1058 @@
+<?xml version="1.0" ?>
+<repository lastmodified="1496177112591">
+   <resource id="com.eclipsesource.jaxrs.swagger-all/1.5.7" symbolicname="com.eclipsesource.jaxrs.swagger-all" version="1.5.7" presentationname="swagger-all" uri="http://repo1.maven.org/maven2/com/eclipsesource/jaxrs/swagger-all/1.5.7/swagger-all-1.5.7.jar">
+      <size>6886988</size>
+      <capability name="bundle">
+         <p n="symbolicname" v="com.eclipsesource.jaxrs.swagger-all"/>
+         <p n="presentationname" v="swagger-all"/>
+         <p n="version" t="version" v="1.5.7"/>
+         <p n="manifestversion" v="2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="io.swagger.models.refs"/>
+         <p n="version" t="version" v="1.5.7.SNAPSHOT"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="io.swagger.converter"/>
+         <p n="uses:" v="io.swagger.models,io.swagger.models.properties,com.fasterxml.jackson.databind,io.swagger.util,com.fasterxml.jackson.databind.type,io.swagger.jackson"/>
+         <p n="version" t="version" v="1.5.7.SNAPSHOT"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="io.swagger.models.auth"/>
+         <p n="uses:" v="com.fasterxml.jackson.annotation"/>
+         <p n="version" t="version" v="1.5.7.SNAPSHOT"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="io.swagger.jersey.listing"/>
+         <p n="uses:" v="javax.ws.rs,io.swagger.jaxrs.listing"/>
+         <p n="version" t="version" v="1.5.7"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="io.swagger.config"/>
+         <p n="uses:" v="io.swagger.core.filter,io.swagger.models"/>
+         <p n="version" t="version" v="1.5.7.SNAPSHOT"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="io.swagger.jackson"/>
+         <p n="uses:" v="com.fasterxml.jackson.core,com.fasterxml.jackson.databind,com.fasterxml.jackson.databind.module,io.swagger.models.properties,com.fasterxml.jackson.databind.introspect,com.fasterxml.jackson.databind.jsontype,io.swagger.annotations,io.swagger.models,javax.xml.bind.annotation,io.swagger.converter,io.swagger.util,com.fasterxml.jackson.databind.type,com.fasterxml.jackson.annotation,com.fasterxml.jackson.core.type,com.fasterxml.jackson.databind.util,com.fasterxml.jackson.core.util"/>
+         <p n="version" t="version" v="1.5.7"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="io.swagger.jersey.config"/>
+         <p n="uses:" v="javax.servlet,io.swagger.jaxrs.config"/>
+         <p n="version" t="version" v="1.5.7"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="io.swagger.models"/>
+         <p n="uses:" v="com.fasterxml.jackson.annotation,io.swagger.models.properties,javax.xml.bind.annotation,io.swagger.models.parameters,io.swagger.models.refs,io.swagger.models.auth"/>
+         <p n="version" t="version" v="1.5.7.SNAPSHOT"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="io.swagger.jaxrs"/>
+         <p n="uses:" v="javax.ws.rs,io.swagger.models.properties,io.swagger.models.parameters,io.swagger.jaxrs.ext,io.swagger.converter,com.fasterxml.jackson.databind,io.swagger.util,com.fasterxml.jackson.databind.type,io.swagger.annotations,io.swagger.jaxrs.utils,io.swagger.models,io.swagger.jaxrs.config,javax.ws.rs.core"/>
+         <p n="version" t="version" v="1.5.7.SNAPSHOT"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="io.swagger.jaxrs.utils"/>
+         <p n="uses:" v="io.swagger.models,io.swagger.models.parameters,io.swagger.jaxrs.ext,io.swagger.util,javax.ws.rs.core"/>
+         <p n="version" t="version" v="1.5.7"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="io.swagger.core.filter"/>
+         <p n="uses:" v="io.swagger.models.properties,io.swagger.models,io.swagger.models.parameters,io.swagger.model"/>
+         <p n="version" t="version" v="1.5.7.SNAPSHOT"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="io.swagger.models.properties"/>
+         <p n="uses:" v="io.swagger.models,com.fasterxml.jackson.annotation,io.swagger.models.refs"/>
+         <p n="version" t="version" v="1.5.7.SNAPSHOT"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="io.swagger.model"/>
+         <p n="uses:" v="io.swagger.models"/>
+         <p n="version" t="version" v="1.5.7.SNAPSHOT"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="io.swagger.jersey"/>
+         <p n="uses:" v="org.glassfish.jersey.media.multipart,com.fasterxml.jackson.databind,javax.ws.rs,io.swagger.models.properties,io.swagger.jaxrs.ext,com.fasterxml.jackson.databind.introspect,io.swagger.util,io.swagger.models,io.swagger.models.parameters,io.swagger.converter"/>
+         <p n="version" t="version" v="1.5.7"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="io.swagger.util"/>
+         <p n="uses:" v="io.swagger.models.properties,io.swagger.annotations,com.fasterxml.jackson.databind,io.swagger.models.auth,io.swagger.models,io.swagger.models.parameters,com.fasterxml.jackson.databind.module,com.fasterxml.jackson.core,com.fasterxml.jackson.core.util,com.fasterxml.jackson.databind.node,com.fasterxml.jackson.annotation,com.fasterxml.jackson.dataformat.yaml,io.swagger.converter,com.fasterxml.jackson.databind.type"/>
+         <p n="version" t="version" v="1.5.7.SNAPSHOT"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="io.swagger.jaxrs.config"/>
+         <p n="uses:" v="io.swagger.jaxrs,javax.ws.rs,io.swagger.config,javax.servlet,io.swagger.core.filter,io.swagger.annotations,io.swagger.models,javax.servlet.http,javax.ws.rs.core"/>
+         <p n="version" t="version" v="1.5.7.SNAPSHOT"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="io.swagger.jaxrs.ext"/>
+         <p n="uses:" v="io.swagger.annotations,com.fasterxml.jackson.databind,io.swagger.models.parameters,com.fasterxml.jackson.databind.type,io.swagger.jaxrs"/>
+         <p n="version" t="version" v="1.5.7.SNAPSHOT"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="io.swagger.annotations"/>
+         <p n="version" t="version" v="1.5.7.SNAPSHOT"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="io.swagger.jaxrs.listing"/>
+         <p n="uses:" v="com.fasterxml.jackson.databind,javax.ws.rs,io.swagger.jaxrs,io.swagger.config,io.swagger.util,io.swagger.annotations,javax.servlet,io.swagger.core.filter,io.swagger.models,io.swagger.jaxrs.config,javax.ws.rs.core,javax.ws.rs.ext"/>
+         <p n="version" t="version" v="1.5.7.SNAPSHOT"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="io.swagger.models.parameters"/>
+         <p n="uses:" v="com.fasterxml.jackson.annotation,io.swagger.models.properties,io.swagger.models,io.swagger.models.refs"/>
+         <p n="version" t="version" v="1.5.7.SNAPSHOT"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="com.fasterxml.jackson.dataformat.yaml.snakeyaml.util"/>
+         <p n="uses:" v="com.fasterxml.jackson.dataformat.yaml.snakeyaml.external.com.google.gdata.util.common.base,com.fasterxml.jackson.dataformat.yaml.snakeyaml.error"/>
+         <p n="version" t="version" v="2.4.5"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="com.fasterxml.jackson.dataformat.yaml.snakeyaml.parser"/>
+         <p n="uses:" v="com.fasterxml.jackson.dataformat.yaml.snakeyaml.events,com.fasterxml.jackson.dataformat.yaml.snakeyaml.error,com.fasterxml.jackson.dataformat.yaml.snakeyaml.util,com.fasterxml.jackson.dataformat.yaml.snakeyaml.tokens,com.fasterxml.jackson.dataformat.yaml.snakeyaml.scanner,com.fasterxml.jackson.dataformat.yaml.snakeyaml,com.fasterxml.jackson.dataformat.yaml.snakeyaml.reader"/>
+         <p n="version" t="version" v="2.4.5"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="com.fasterxml.jackson.core.sym"/>
+         <p n="uses:" v="com.fasterxml.jackson.core,com.fasterxml.jackson.core.util"/>
+         <p n="version" t="version" v="2.4.5"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="com.fasterxml.jackson.databind.jsonschema"/>
+         <p n="uses:" v="com.fasterxml.jackson.databind,com.fasterxml.jackson.databind.node,com.fasterxml.jackson.annotation"/>
+         <p n="version" t="version" v="2.4.5"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="com.fasterxml.jackson.dataformat.yaml.snakeyaml.representer"/>
+         <p n="uses:" v="com.fasterxml.jackson.dataformat.yaml.snakeyaml.nodes,com.fasterxml.jackson.dataformat.yaml.snakeyaml.introspector,com.fasterxml.jackson.dataformat.yaml.snakeyaml.error,com.fasterxml.jackson.dataformat.yaml.snakeyaml,com.fasterxml.jackson.dataformat.yaml.snakeyaml.external.biz.base64Coder,com.fasterxml.jackson.dataformat.yaml.snakeyaml.reader"/>
+         <p n="version" t="version" v="2.4.5"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="com.fasterxml.jackson.dataformat.yaml.snakeyaml.constructor"/>
+         <p n="uses:" v="com.fasterxml.jackson.dataformat.yaml.snakeyaml.nodes,com.fasterxml.jackson.dataformat.yaml.snakeyaml.error,com.fasterxml.jackson.dataformat.yaml.snakeyaml.introspector,com.fasterxml.jackson.dataformat.yaml.snakeyaml.composer,com.fasterxml.jackson.dataformat.yaml.snakeyaml,com.fasterxml.jackson.dataformat.yaml.snakeyaml.external.biz.base64Coder"/>
+         <p n="version" t="version" v="2.4.5"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="com.fasterxml.jackson.databind.jsontype"/>
+         <p n="uses:" v="com.fasterxml.jackson.databind,com.fasterxml.jackson.databind.cfg,com.fasterxml.jackson.databind.introspect,com.fasterxml.jackson.core,com.fasterxml.jackson.annotation"/>
+         <p n="version" t="version" v="2.4.5"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="com.fasterxml.jackson.databind.module"/>
+         <p n="uses:" v="com.fasterxml.jackson.databind,com.fasterxml.jackson.databind.type,com.fasterxml.jackson.databind.deser,com.fasterxml.jackson.databind.jsontype,com.fasterxml.jackson.core,com.fasterxml.jackson.databind.ser"/>
+         <p n="version" t="version" v="2.4.5"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="com.fasterxml.jackson.dataformat.yaml.snakeyaml.nodes"/>
+         <p n="uses:" v="com.fasterxml.jackson.dataformat.yaml.snakeyaml.error,com.fasterxml.jackson.dataformat.yaml.snakeyaml.util"/>
+         <p n="version" t="version" v="2.4.5"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="com.fasterxml.jackson.jaxrs.util"/>
+         <p n="uses:" v="com.fasterxml.jackson.databind.util,com.fasterxml.jackson.databind,com.fasterxml.jackson.databind.introspect"/>
+         <p n="version" t="version" v="2.4.5"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="com.fasterxml.jackson.databind.deser.impl"/>
+         <p n="uses:" v="com.fasterxml.jackson.core,com.fasterxml.jackson.databind.util,com.fasterxml.jackson.databind,com.fasterxml.jackson.databind.deser,com.fasterxml.jackson.databind.introspect,com.fasterxml.jackson.databind.deser.std,com.fasterxml.jackson.databind.type,com.fasterxml.jackson.databind.jsontype,com.fasterxml.jackson.annotation"/>
+         <p n="version" t="version" v="2.4.5"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="com.fasterxml.jackson.jaxrs.json.annotation"/>
+         <p n="uses:" v="com.fasterxml.jackson.annotation,com.fasterxml.jackson.databind"/>
+         <p n="version" t="version" v="2.4.5"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="com.fasterxml.jackson.core.io"/>
+         <p n="uses:" v="com.fasterxml.jackson.core,com.fasterxml.jackson.core.util"/>
+         <p n="version" t="version" v="2.4.5"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="com.fasterxml.jackson.dataformat.yaml.snakeyaml.reader"/>
+         <p n="uses:" v="com.fasterxml.jackson.dataformat.yaml.snakeyaml.error,com.fasterxml.jackson.dataformat.yaml.snakeyaml.scanner"/>
+         <p n="version" t="version" v="2.4.5"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="com.fasterxml.jackson.dataformat.yaml.snakeyaml.scanner"/>
+         <p n="uses:" v="com.fasterxml.jackson.dataformat.yaml.snakeyaml.tokens,com.fasterxml.jackson.dataformat.yaml.snakeyaml.error,com.fasterxml.jackson.dataformat.yaml.snakeyaml.util,com.fasterxml.jackson.dataformat.yaml.snakeyaml.reader"/>
+         <p n="version" t="version" v="2.4.5"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="com.fasterxml.jackson.core.json"/>
+         <p n="uses:" v="com.fasterxml.jackson.core.io,com.fasterxml.jackson.core,com.fasterxml.jackson.core.sym,com.fasterxml.jackson.core.format,com.fasterxml.jackson.core.util,com.fasterxml.jackson.core.base"/>
+         <p n="version" t="version" v="2.4.5"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="com.fasterxml.jackson.databind.jsontype.impl"/>
+         <p n="uses:" v="com.fasterxml.jackson.core,com.fasterxml.jackson.databind.util,com.fasterxml.jackson.databind,com.fasterxml.jackson.core.util,com.fasterxml.jackson.annotation,com.fasterxml.jackson.databind.jsontype,com.fasterxml.jackson.databind.type,com.fasterxml.jackson.databind.cfg,com.fasterxml.jackson.databind.introspect,com.fasterxml.jackson.databind.deser.std"/>
+         <p n="version" t="version" v="2.4.5"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="com.fasterxml.jackson.dataformat.xml.deser"/>
+         <p n="uses:" v="com.fasterxml.jackson.core,com.fasterxml.jackson.core.io,javax.xml.stream,com.fasterxml.jackson.dataformat.xml,com.fasterxml.jackson.core.util,com.fasterxml.jackson.core.base,com.fasterxml.jackson.databind,com.fasterxml.jackson.databind.deser.std,com.fasterxml.jackson.databind.deser,com.fasterxml.jackson.dataformat.xml.util,com.fasterxml.jackson.databind.jsontype,com.fasterxml.jackson.databind.introspect"/>
+         <p n="version" t="version" v="2.4.5"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="com.fasterxml.jackson.datatype.joda.deser"/>
+         <p n="uses:" v="com.fasterxml.jackson.core,com.fasterxml.jackson.databind,com.fasterxml.jackson.databind.jsontype,com.fasterxml.jackson.databind.deser.std"/>
+         <p n="version" t="version" v="2.4.5"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="com.fasterxml.jackson.dataformat.yaml.snakeyaml.emitter"/>
+         <p n="uses:" v="com.fasterxml.jackson.dataformat.yaml.snakeyaml.events,com.fasterxml.jackson.dataformat.yaml.snakeyaml.util,com.fasterxml.jackson.dataformat.yaml.snakeyaml,com.fasterxml.jackson.dataformat.yaml.snakeyaml.reader,com.fasterxml.jackson.dataformat.yaml.snakeyaml.scanner,com.fasterxml.jackson.dataformat.yaml.snakeyaml.error"/>
+         <p n="version" t="version" v="2.4.5"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="com.fasterxml.jackson.databind.introspect"/>
+         <p n="uses:" v="com.fasterxml.jackson.databind,com.fasterxml.jackson.databind.type,com.fasterxml.jackson.databind.util,com.fasterxml.jackson.core,com.fasterxml.jackson.databind.annotation,com.fasterxml.jackson.databind.cfg,com.fasterxml.jackson.annotation,com.fasterxml.jackson.databind.jsontype,com.fasterxml.jackson.databind.jsontype.impl,com.fasterxml.jackson.databind.ser.std"/>
+         <p n="version" t="version" v="2.4.5"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="com.fasterxml.jackson.databind.type"/>
+         <p n="uses:" v="com.fasterxml.jackson.databind,com.fasterxml.jackson.core.type,com.fasterxml.jackson.core,com.fasterxml.jackson.databind.jsontype,com.fasterxml.jackson.databind.util"/>
+         <p n="version" t="version" v="2.4.5"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="com.fasterxml.jackson.dataformat.yaml.snakeyaml.serializer"/>
+         <p n="uses:" v="com.fasterxml.jackson.dataformat.yaml.snakeyaml.nodes,com.fasterxml.jackson.dataformat.yaml.snakeyaml.resolver,com.fasterxml.jackson.dataformat.yaml.snakeyaml.events,com.fasterxml.jackson.dataformat.yaml.snakeyaml.error,com.fasterxml.jackson.dataformat.yaml.snakeyaml.emitter,com.fasterxml.jackson.dataformat.yaml.snakeyaml"/>
+         <p n="version" t="version" v="2.4.5"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="com.fasterxml.jackson.jaxrs.annotation"/>
+         <p n="uses:" v="com.fasterxml.jackson.databind,com.fasterxml.jackson.annotation"/>
+         <p n="version" t="version" v="2.4.5"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="com.fasterxml.jackson.module.jaxb.deser"/>
+         <p n="uses:" v="com.fasterxml.jackson.core,com.fasterxml.jackson.databind,com.fasterxml.jackson.databind.deser.std,com.fasterxml.jackson.databind.node,javax.xml.parsers"/>
+         <p n="version" t="version" v="2.4.5"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="com.fasterxml.jackson.dataformat.yaml.snakeyaml.external.biz.base64Coder"/>
+         <p n="version" t="version" v="2.4.5"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="com.fasterxml.jackson.databind.ser.impl"/>
+         <p n="uses:" v="com.fasterxml.jackson.core,com.fasterxml.jackson.databind.util,com.fasterxml.jackson.databind,com.fasterxml.jackson.databind.ser,com.fasterxml.jackson.databind.jsontype,com.fasterxml.jackson.databind.ser.std,com.fasterxml.jackson.databind.jsonFormatVisitors,com.fasterxml.jackson.databind.annotation,com.fasterxml.jackson.databind.node,com.fasterxml.jackson.databind.introspect,com.fasterxml.jackson.core.io,com.fasterxml.jackson.annotation,com.fasterxml.jackson.databind.type"/>
+         <p n="version" t="version" v="2.4.5"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="com.fasterxml.jackson.core.util"/>
+         <p n="uses:" v="com.fasterxml.jackson.core,com.fasterxml.jackson.core.io"/>
+         <p n="version" t="version" v="2.4.5"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="com.fasterxml.jackson.dataformat.xml.util"/>
+         <p n="uses:" v="com.fasterxml.jackson.databind,com.fasterxml.jackson.dataformat.xml,com.fasterxml.jackson.databind.introspect,com.fasterxml.jackson.module.jaxb,com.fasterxml.jackson.core,javax.xml.stream,com.fasterxml.jackson.dataformat.xml.ser,com.fasterxml.jackson.core.util,com.fasterxml.jackson.databind.util,com.fasterxml.jackson.databind.cfg,javax.xml.namespace,com.fasterxml.jackson.databind.type"/>
+         <p n="version" t="version" v="2.4.5"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="com.fasterxml.jackson.dataformat.yaml.snakeyaml.error"/>
+         <p n="uses:" v="com.fasterxml.jackson.dataformat.yaml.snakeyaml.scanner"/>
+         <p n="version" t="version" v="2.4.5"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="com.fasterxml.jackson.annotation"/>
+         <p n="version" t="version" v="2.4.5"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="com.fasterxml.jackson.dataformat.xml.jaxb"/>
+         <p n="uses:" v="com.fasterxml.jackson.dataformat.xml,com.fasterxml.jackson.databind.introspect,com.fasterxml.jackson.module.jaxb,com.fasterxml.jackson.databind.type"/>
+         <p n="version" t="version" v="2.4.5"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="com.fasterxml.jackson.dataformat.yaml.snakeyaml.introspector"/>
+         <p n="uses:" v="com.fasterxml.jackson.dataformat.yaml.snakeyaml.error"/>
+         <p n="version" t="version" v="2.4.5"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="com.fasterxml.jackson.databind.node"/>
+         <p n="uses:" v="com.fasterxml.jackson.core,com.fasterxml.jackson.databind,com.fasterxml.jackson.databind.jsontype,com.fasterxml.jackson.core.io,com.fasterxml.jackson.core.util,com.fasterxml.jackson.databind.cfg,com.fasterxml.jackson.core.base"/>
+         <p n="version" t="version" v="2.4.5"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="com.fasterxml.jackson.dataformat.yaml.snakeyaml"/>
+         <p n="uses:" v="com.fasterxml.jackson.dataformat.yaml.snakeyaml.representer,com.fasterxml.jackson.dataformat.yaml.snakeyaml.error,com.fasterxml.jackson.dataformat.yaml.snakeyaml.nodes,com.fasterxml.jackson.dataformat.yaml.snakeyaml.emitter,com.fasterxml.jackson.dataformat.yaml.snakeyaml.introspector,com.fasterxml.jackson.dataformat.yaml.snakeyaml.resolver,com.fasterxml.jackson.dataformat.yaml.snakeyaml.reader,com.fasterxml.jackson.dataformat.yaml.snakeyaml.constructor,com.fasterxml.jackson.dataformat.yaml.snakeyaml.composer,com.fasterxml.jackson.dataformat.yaml.snakeyaml.events,com.fasterxml.jackson.dataformat.yaml.snakeyaml.parser,com.fasterxml.jackson.dataformat.yaml.snakeyaml.serializer"/>
+         <p n="version" t="version" v="2.4.5"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="com.fasterxml.jackson.dataformat.yaml.snakeyaml.resolver"/>
+         <p n="uses:" v="com.fasterxml.jackson.dataformat.yaml.snakeyaml.nodes"/>
+         <p n="version" t="version" v="2.4.5"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="com.fasterxml.jackson.databind.ser"/>
+         <p n="uses:" v="com.fasterxml.jackson.core,com.fasterxml.jackson.databind,com.fasterxml.jackson.databind.introspect,com.fasterxml.jackson.databind.ser.std,com.fasterxml.jackson.annotation,com.fasterxml.jackson.databind.jsontype,com.fasterxml.jackson.databind.type,com.fasterxml.jackson.databind.util,com.fasterxml.jackson.databind.annotation,com.fasterxml.jackson.databind.ser.impl,com.fasterxml.jackson.databind.cfg,com.fasterxml.jackson.databind.ext,com.fasterxml.jackson.databind.jsonFormatVisitors,com.fasterxml.jackson.databind.node,com.fasterxml.jackson.core.io,com.fasterxml.jackson.databind.jsonschema"/>
+         <p n="version" t="version" v="2.4.5"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="com.fasterxml.jackson.databind.cfg"/>
+         <p n="uses:" v="com.fasterxml.jackson.databind.util,com.fasterxml.jackson.core,com.fasterxml.jackson.databind,com.fasterxml.jackson.annotation,com.fasterxml.jackson.databind.introspect,com.fasterxml.jackson.databind.jsontype,com.fasterxml.jackson.databind.type,com.fasterxml.jackson.databind.deser.std,com.fasterxml.jackson.databind.deser,com.fasterxml.jackson.core.type,com.fasterxml.jackson.core.io,com.fasterxml.jackson.core.util,com.fasterxml.jackson.databind.ser"/>
+         <p n="version" t="version" v="2.4.5"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="com.fasterxml.jackson.datatype.joda.ser"/>
+         <p n="uses:" v="com.fasterxml.jackson.core,com.fasterxml.jackson.databind,com.fasterxml.jackson.databind.node,com.fasterxml.jackson.databind.ser,com.fasterxml.jackson.annotation,com.fasterxml.jackson.databind.introspect,com.fasterxml.jackson.databind.jsontype,com.fasterxml.jackson.databind.ser.std"/>
+         <p n="version" t="version" v="2.4.5"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="com.fasterxml.jackson.databind.deser.std"/>
+         <p n="uses:" v="com.fasterxml.jackson.core,com.fasterxml.jackson.databind,com.fasterxml.jackson.databind.deser,com.fasterxml.jackson.databind.jsontype,com.fasterxml.jackson.databind.node,com.fasterxml.jackson.databind.util,com.fasterxml.jackson.databind.deser.impl,com.fasterxml.jackson.databind.annotation,com.fasterxml.jackson.annotation,com.fasterxml.jackson.databind.introspect,com.fasterxml.jackson.databind.exc,com.fasterxml.jackson.databind.type,com.fasterxml.jackson.core.io"/>
+         <p n="version" t="version" v="2.4.5"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="com.fasterxml.jackson.jaxrs.cfg"/>
+         <p n="uses:" v="com.fasterxml.jackson.jaxrs.annotation,com.fasterxml.jackson.databind,com.fasterxml.jackson.annotation,com.fasterxml.jackson.databind.cfg,com.fasterxml.jackson.core,javax.ws.rs.core"/>
+         <p n="version" t="version" v="2.4.5"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="com.fasterxml.jackson.dataformat.yaml.snakeyaml.extensions.compactnotation"/>
+         <p n="uses:" v="com.fasterxml.jackson.dataformat.yaml.snakeyaml.nodes,com.fasterxml.jackson.dataformat.yaml.snakeyaml.constructor,com.fasterxml.jackson.dataformat.yaml.snakeyaml.introspector,com.fasterxml.jackson.dataformat.yaml.snakeyaml.error"/>
+         <p n="version" t="version" v="2.4.5"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="com.fasterxml.jackson.core"/>
+         <p n="uses:" v="com.fasterxml.jackson.core.util,com.fasterxml.jackson.core.io,com.fasterxml.jackson.core.json,com.fasterxml.jackson.core.sym,com.fasterxml.jackson.core.format,com.fasterxml.jackson.core.type"/>
+         <p n="version" t="version" v="2.4.5"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="com.fasterxml.jackson.jaxrs.json"/>
+         <p n="uses:" v="com.fasterxml.jackson.databind,javax.ws.rs,com.fasterxml.jackson.jaxrs.cfg,javax.ws.rs.ext,com.fasterxml.jackson.core,com.fasterxml.jackson.jaxrs.base,javax.ws.rs.core,com.fasterxml.jackson.databind.util,com.fasterxml.jackson.jaxrs.json.annotation,com.fasterxml.jackson.databind.introspect,com.fasterxml.jackson.module.jaxb,com.fasterxml.jackson.core.util"/>
+         <p n="version" t="version" v="2.4.5"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="com.fasterxml.jackson.databind.jsonFormatVisitors"/>
+         <p n="uses:" v="com.fasterxml.jackson.databind,com.fasterxml.jackson.annotation,com.fasterxml.jackson.core"/>
+         <p n="version" t="version" v="2.4.5"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="com.fasterxml.jackson.datatype.joda.deser.key"/>
+         <p n="uses:" v="com.fasterxml.jackson.core,com.fasterxml.jackson.databind"/>
+         <p n="version" t="version" v="2.4.5"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="com.fasterxml.jackson.databind.util"/>
+         <p n="uses:" v="com.fasterxml.jackson.databind.introspect,com.fasterxml.jackson.databind.annotation,com.fasterxml.jackson.databind,com.fasterxml.jackson.databind.type,com.fasterxml.jackson.core,com.fasterxml.jackson.databind.cfg,com.fasterxml.jackson.databind.jsontype,com.fasterxml.jackson.core.io,com.fasterxml.jackson.core.json,com.fasterxml.jackson.core.util,com.fasterxml.jackson.core.base"/>
+         <p n="version" t="version" v="2.4.5"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="com.fasterxml.jackson.dataformat.yaml.snakeyaml.external.com.google.gdata.util.common.base"/>
+         <p n="version" t="version" v="2.4.5"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="com.fasterxml.jackson.core.type"/>
+         <p n="version" t="version" v="2.4.5"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="com.fasterxml.jackson.databind.annotation"/>
+         <p n="uses:" v="com.fasterxml.jackson.annotation,com.fasterxml.jackson.databind.util,com.fasterxml.jackson.databind,com.fasterxml.jackson.databind.jsontype,com.fasterxml.jackson.databind.deser"/>
+         <p n="version" t="version" v="2.4.5"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="com.fasterxml.jackson.dataformat.yaml.snakeyaml.events"/>
+         <p n="uses:" v="com.fasterxml.jackson.dataformat.yaml.snakeyaml.error,com.fasterxml.jackson.dataformat.yaml.snakeyaml"/>
+         <p n="version" t="version" v="2.4.5"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="com.fasterxml.jackson.datatype.joda"/>
+         <p n="uses:" v="com.fasterxml.jackson.databind,com.fasterxml.jackson.datatype.joda.deser.key,com.fasterxml.jackson.core,com.fasterxml.jackson.datatype.joda.deser,com.fasterxml.jackson.datatype.joda.ser,com.fasterxml.jackson.databind.module,com.fasterxml.jackson.databind.ser.std,com.fasterxml.jackson.core.util"/>
+         <p n="version" t="version" v="2.4.5"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="com.fasterxml.jackson.core.base"/>
+         <p n="uses:" v="com.fasterxml.jackson.core.json,com.fasterxml.jackson.core,com.fasterxml.jackson.core.util,com.fasterxml.jackson.core.io"/>
+         <p n="version" t="version" v="2.4.5"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="com.fasterxml.jackson.dataformat.yaml.snakeyaml.composer"/>
+         <p n="uses:" v="com.fasterxml.jackson.dataformat.yaml.snakeyaml.resolver,com.fasterxml.jackson.dataformat.yaml.snakeyaml.nodes,com.fasterxml.jackson.dataformat.yaml.snakeyaml.parser,com.fasterxml.jackson.dataformat.yaml.snakeyaml.events,com.fasterxml.jackson.dataformat.yaml.snakeyaml.error"/>
+         <p n="version" t="version" v="2.4.5"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="com.fasterxml.jackson.databind.exc"/>
+         <p n="uses:" v="com.fasterxml.jackson.core,com.fasterxml.jackson.databind"/>
+         <p n="version" t="version" v="2.4.5"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="com.fasterxml.jackson.jaxrs.base"/>
+         <p n="uses:" v="com.fasterxml.jackson.databind,javax.ws.rs.ext,javax.ws.rs.core,com.fasterxml.jackson.core,com.fasterxml.jackson.jaxrs.cfg,com.fasterxml.jackson.databind.type,com.fasterxml.jackson.jaxrs.util"/>
+         <p n="version" t="version" v="2.4.5"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="com.fasterxml.jackson.module.jaxb.ser"/>
+         <p n="uses:" v="com.fasterxml.jackson.core,com.fasterxml.jackson.databind,com.fasterxml.jackson.databind.jsonFormatVisitors,com.fasterxml.jackson.databind.node,com.fasterxml.jackson.databind.ser.std"/>
+         <p n="version" t="version" v="2.4.5"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="com.fasterxml.jackson.databind"/>
+         <p n="uses:" v="com.fasterxml.jackson.databind.util,com.fasterxml.jackson.core,com.fasterxml.jackson.databind.annotation,com.fasterxml.jackson.databind.cfg,com.fasterxml.jackson.annotation,com.fasterxml.jackson.databind.introspect,com.fasterxml.jackson.databind.jsontype,com.fasterxml.jackson.databind.type,com.fasterxml.jackson.databind.jsonFormatVisitors,com.fasterxml.jackson.databind.node,com.fasterxml.jackson.databind.deser,com.fasterxml.jackson.databind.deser.impl,com.fasterxml.jackson.databind.exc,com.fasterxml.jackson.core.type,com.fasterxml.jackson.core.format,com.fasterxml.jackson.databind.ser,com.fasterxml.jackson.databind.jsontype.impl,com.fasterxml.jackson.core.io,com.fasterxml.jackson.databind.jsonschema,com.fasterxml.jackson.core.util,com.fasterxml.jackson.databind.ser.impl,com.fasterxml.jackson.databind.ser.std"/>
+         <p n="version" t="version" v="2.4.5"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="com.fasterxml.jackson.dataformat.xml"/>
+         <p n="uses:" v="com.fasterxml.jackson.databind.jsontype.impl,com.fasterxml.jackson.databind,com.fasterxml.jackson.databind.introspect,com.fasterxml.jackson.dataformat.xml.annotation,com.fasterxml.jackson.core,com.fasterxml.jackson.databind.ser,com.fasterxml.jackson.dataformat.xml.ser,com.fasterxml.jackson.databind.deser,com.fasterxml.jackson.databind.module,com.fasterxml.jackson.dataformat.xml.deser,com.fasterxml.jackson.core.util,com.fasterxml.jackson.module.jaxb,com.fasterxml.jackson.core.io,javax.xml.stream,javax.xml.transform,com.fasterxml.jackson.dataformat.xml.util,com.fasterxml.jackson.core.format,com.fasterxml.jackson.core.type,com.fasterxml.jackson.databind.type,com.fasterxml.jackson.annotation,com.fasterxml.jackson.databind.cfg,com.fasterxml.jackson.databind.jsontype"/>
+         <p n="version" t="version" v="2.4.5"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="com.fasterxml.jackson.dataformat.yaml.snakeyaml.tokens"/>
+         <p n="uses:" v="com.fasterxml.jackson.dataformat.yaml.snakeyaml.error"/>
+         <p n="version" t="version" v="2.4.5"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="com.fasterxml.jackson.databind.ext"/>
+         <p n="uses:" v="com.fasterxml.jackson.core,com.fasterxml.jackson.databind,com.fasterxml.jackson.databind.deser.std,javax.xml.datatype,javax.xml.namespace,com.fasterxml.jackson.databind.deser,com.fasterxml.jackson.databind.jsonFormatVisitors,com.fasterxml.jackson.databind.ser.std,com.fasterxml.jackson.databind.ser,javax.xml.parsers,com.fasterxml.jackson.databind.node"/>
+         <p n="version" t="version" v="2.4.5"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="com.fasterxml.jackson.dataformat.xml.ser"/>
+         <p n="uses:" v="com.fasterxml.jackson.core.json,com.fasterxml.jackson.core.base,javax.xml.namespace,com.fasterxml.jackson.core.io,com.fasterxml.jackson.core,javax.xml.stream,com.fasterxml.jackson.dataformat.xml,com.fasterxml.jackson.dataformat.xml.util,com.fasterxml.jackson.databind.util,com.fasterxml.jackson.databind,com.fasterxml.jackson.databind.ser.impl,com.fasterxml.jackson.databind.ser.std,com.fasterxml.jackson.databind.ser,com.fasterxml.jackson.databind.jsontype,com.fasterxml.jackson.annotation,com.fasterxml.jackson.databind.introspect,com.fasterxml.jackson.databind.cfg"/>
+         <p n="version" t="version" v="2.4.5"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="com.fasterxml.jackson.databind.deser"/>
+         <p n="uses:" v="com.fasterxml.jackson.core,com.fasterxml.jackson.databind,com.fasterxml.jackson.annotation,com.fasterxml.jackson.databind.deser.impl,com.fasterxml.jackson.databind.jsontype,com.fasterxml.jackson.databind.introspect,com.fasterxml.jackson.databind.type,com.fasterxml.jackson.databind.util,com.fasterxml.jackson.databind.deser.std,com.fasterxml.jackson.databind.cfg,com.fasterxml.jackson.databind.exc,com.fasterxml.jackson.databind.annotation,com.fasterxml.jackson.databind.ext,com.fasterxml.jackson.core.format,com.fasterxml.jackson.core.io,com.fasterxml.jackson.databind.jsonFormatVisitors"/>
+         <p n="version" t="version" v="2.4.5"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="com.fasterxml.jackson.dataformat.xml.annotation"/>
+         <p n="version" t="version" v="2.4.5"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="com.fasterxml.jackson.module.jaxb"/>
+         <p n="uses:" v="com.fasterxml.jackson.databind.util,com.fasterxml.jackson.databind,javax.xml.bind.annotation.adapters,com.fasterxml.jackson.databind.type,javax.xml.bind.annotation,com.fasterxml.jackson.databind.jsontype.impl,com.fasterxml.jackson.module.jaxb.deser,com.fasterxml.jackson.databind.introspect,com.fasterxml.jackson.databind.jsontype,com.fasterxml.jackson.core,com.fasterxml.jackson.databind.cfg,com.fasterxml.jackson.annotation,javax.xml.bind,com.fasterxml.jackson.module.jaxb.ser,com.fasterxml.jackson.databind.module,com.fasterxml.jackson.core.util"/>
+         <p n="version" t="version" v="2.4.5"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="com.fasterxml.jackson.core.format"/>
+         <p n="uses:" v="com.fasterxml.jackson.core,com.fasterxml.jackson.core.io"/>
+         <p n="version" t="version" v="2.4.5"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="com.fasterxml.jackson.databind.ser.std"/>
+         <p n="uses:" v="com.fasterxml.jackson.core,com.fasterxml.jackson.databind,com.fasterxml.jackson.databind.ser,com.fasterxml.jackson.databind.jsontype,com.fasterxml.jackson.databind.jsonFormatVisitors,com.fasterxml.jackson.databind.node,com.fasterxml.jackson.databind.introspect,com.fasterxml.jackson.databind.jsonschema,com.fasterxml.jackson.databind.ser.impl,com.fasterxml.jackson.databind.type,com.fasterxml.jackson.databind.util,com.fasterxml.jackson.annotation,com.fasterxml.jackson.databind.annotation"/>
+         <p n="version" t="version" v="2.4.5"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="com.fasterxml.jackson.dataformat.yaml"/>
+         <p n="uses:" v="com.fasterxml.jackson.core,com.fasterxml.jackson.core.util,com.fasterxml.jackson.core.io,com.fasterxml.jackson.dataformat.yaml.snakeyaml,com.fasterxml.jackson.core.format,com.fasterxml.jackson.core.json,com.fasterxml.jackson.dataformat.yaml.snakeyaml.error,com.fasterxml.jackson.core.base,com.fasterxml.jackson.dataformat.yaml.snakeyaml.events,com.fasterxml.jackson.dataformat.yaml.snakeyaml.emitter,com.fasterxml.jackson.dataformat.yaml.snakeyaml.parser,com.fasterxml.jackson.dataformat.yaml.snakeyaml.reader"/>
+         <p n="version" t="version" v="2.4.5"/>
+      </capability>
+      <require name="package" filter="(&amp;(package=javax.servlet)(&amp;(version&gt;=2.3.0)(!(version&gt;=4.0.0))))" extend="false" multiple="false" optional="true">Import package javax.servlet</require>
+      <require name="package" filter="(&amp;(package=javax.servlet.http)(&amp;(version&gt;=2.3.0)(!(version&gt;=4.0.0))))" extend="false" multiple="false" optional="true">Import package javax.servlet.http</require>
+      <require name="package" filter="(&amp;(package=javax.ws.rs)(&amp;(version&gt;=2.0.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package javax.ws.rs</require>
+      <require name="package" filter="(&amp;(package=javax.ws.rs.core)(&amp;(version&gt;=2.0.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package javax.ws.rs.core</require>
+      <require name="package" filter="(&amp;(package=javax.ws.rs.ext)(&amp;(version&gt;=2.0.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package javax.ws.rs.ext</require>
+      <require name="package" filter="(&amp;(package=javax.xml.bind)(version&gt;=0.0.0))" extend="false" multiple="false" optional="false">Import package javax.xml.bind</require>
+      <require name="package" filter="(&amp;(package=javax.xml.bind.annotation)(version&gt;=0.0.0))" extend="false" multiple="false" optional="false">Import package javax.xml.bind.annotation</require>
+      <require name="package" filter="(&amp;(package=javax.xml.bind.annotation.adapters)(version&gt;=0.0.0))" extend="false" multiple="false" optional="false">Import package javax.xml.bind.annotation.adapters</require>
+      <require name="package" filter="(&amp;(package=javax.xml.datatype)(version&gt;=0.0.0))" extend="false" multiple="false" optional="false">Import package javax.xml.datatype</require>
+      <require name="package" filter="(&amp;(package=javax.xml.namespace)(version&gt;=0.0.0))" extend="false" multiple="false" optional="false">Import package javax.xml.namespace</require>
+      <require name="package" filter="(&amp;(package=javax.xml.parsers)(version&gt;=0.0.0))" extend="false" multiple="false" optional="false">Import package javax.xml.parsers</require>
+      <require name="package" filter="(&amp;(package=javax.xml.stream)(version&gt;=0.0.0))" extend="false" multiple="false" optional="false">Import package javax.xml.stream</require>
+      <require name="package" filter="(&amp;(package=javax.xml.stream.events)(version&gt;=0.0.0))" extend="false" multiple="false" optional="false">Import package javax.xml.stream.events</require>
+      <require name="package" filter="(&amp;(package=javax.xml.stream.util)(version&gt;=0.0.0))" extend="false" multiple="false" optional="false">Import package javax.xml.stream.util</require>
+      <require name="package" filter="(&amp;(package=javax.xml.transform)(version&gt;=0.0.0))" extend="false" multiple="false" optional="false">Import package javax.xml.transform</require>
+      <require name="package" filter="(&amp;(package=javax.xml.transform.dom)(version&gt;=0.0.0))" extend="false" multiple="false" optional="false">Import package javax.xml.transform.dom</require>
+      <require name="package" filter="(&amp;(package=org.glassfish.jersey.media.multipart)(&amp;(version&gt;=2.22.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package org.glassfish.jersey.media.multipart</require>
+   </resource>
+   <resource id="com.eclipsesource.jaxrs.jersey-all/2.22.2" symbolicname="com.eclipsesource.jaxrs.jersey-all" version="2.22.2" presentationname="jersey-all" uri="http://repo1.maven.org/maven2/com/eclipsesource/jaxrs/jersey-all/2.22.2/jersey-all-2.22.2.jar">
+      <size>6532494</size>
+      <capability name="bundle">
+         <p n="symbolicname" v="com.eclipsesource.jaxrs.jersey-all"/>
+         <p n="presentationname" v="jersey-all"/>
+         <p n="version" t="version" v="2.22.2"/>
+         <p n="manifestversion" v="2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="javax.ws.rs"/>
+         <p n="uses:" v="javax.ws.rs.core,javax.ws.rs.ext"/>
+         <p n="version" t="version" v="2.0"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="javax.ws.rs.core"/>
+         <p n="uses:" v="javax.ws.rs.ext,javax.ws.rs,javax.xml.bind.annotation.adapters,javax.xml.namespace,javax.xml.bind.annotation"/>
+         <p n="version" t="version" v="2.0"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="javax.ws.rs.container"/>
+         <p n="uses:" v="javax.ws.rs.core"/>
+         <p n="version" t="version" v="2.0"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="javax.ws.rs.ext"/>
+         <p n="uses:" v="javax.ws.rs.core,javax.ws.rs"/>
+         <p n="version" t="version" v="2.0"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="javax.ws.rs.client"/>
+         <p n="uses:" v="javax.ws.rs.core,javax.net.ssl,javax.ws.rs"/>
+         <p n="version" t="version" v="2.0"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="javax.annotation"/>
+         <p n="version" t="version" v="1.2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="javax.annotation.sql"/>
+         <p n="version" t="version" v="1.2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="javax.annotation.security"/>
+         <p n="version" t="version" v="1.2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.glassfish.jersey.server.internal.monitoring.jmx"/>
+         <p n="uses:" v="org.glassfish.jersey.server.monitoring,org.glassfish.jersey.server,org.glassfish.jersey.server.internal,javax.ws.rs.core,org.glassfish.jersey.internal.util.collection,javax.management,org.glassfish.jersey.server.spi,javax.ws.rs,javax.inject,org.glassfish.jersey.message.internal,org.glassfish.jersey.server.model,org.glassfish.jersey.server.internal.monitoring"/>
+         <p n="version" t="version" v="2.22.2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.glassfish.jersey.server.filter"/>
+         <p n="uses:" v="javax.annotation,javax.ws.rs,javax.ws.rs.container,javax.ws.rs.core,org.glassfish.jersey.message.internal,org.glassfish.jersey.server,org.glassfish.hk2.api,org.glassfish.jersey.spi,javax.inject,org.glassfish.jersey.server.internal,org.glassfish.jersey.internal.util,javax.annotation.security,org.glassfish.jersey.server.model,org.glassfish.jersey.uri"/>
+         <p n="version" t="version" v="2.22.2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.glassfish.jersey.media.multipart.internal"/>
+         <p n="uses:" v="org.glassfish.hk2.api,org.glassfish.hk2.utilities.binding,javax.inject,javax.ws.rs.core,javax.ws.rs,org.glassfish.jersey.message.internal,org.glassfish.jersey.media.multipart,org.glassfish.jersey.server,org.glassfish.jersey.internal.util.collection,javax.ws.rs.ext,org.glassfish.jersey.server.model,org.glassfish.jersey.message,org.glassfish.jersey.internal.inject,org.glassfish.jersey.server.internal.inject,org.glassfish.jersey.server.spi.internal,org.glassfish.jersey.internal.util,org.glassfish.jersey.internal.l10n"/>
+         <p n="version" t="version" v="2.22.2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.glassfish.jersey.model.internal"/>
+         <p n="uses:" v="org.glassfish.hk2.utilities,javax.annotation,org.glassfish.jersey.internal.spi,javax.ws.rs,org.glassfish.hk2.api,javax.ws.rs.core,org.glassfish.hk2.utilities.binding,org.glassfish.jersey.internal,org.glassfish.jersey.model,org.glassfish.jersey,org.glassfish.jersey.internal.inject,org.glassfish.jersey.internal.util,javax.inject,org.glassfish.jersey.process"/>
+         <p n="version" t="version" v="2.22.2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.glassfish.jersey.server"/>
+         <p n="uses:" v="javax.ws.rs.core,org.glassfish.jersey.internal.util.collection,org.glassfish.jersey.internal.util,org.glassfish.hk2.utilities,org.glassfish.hk2.api,org.glassfish.jersey.server.spi,org.glassfish.jersey.model.internal,org.glassfish.jersey.model,org.glassfish.jersey.server.model,javax.ws.rs,org.glassfish.jersey.internal.inject,org.glassfish.hk2.utilities.binding,javax.inject,org.glassfish.jersey.server.internal,javax.ws.rs.container,org.glassfish.jersey.server.internal.routing,org.glassfish.jersey,org.glassfish.jersey.server.internal.monitoring,org.glassfish.jersey.message.internal,org.glassfish.jersey.internal,javax.ws.rs.ext,org.glassfish.jersey.server.internal.process,org.glassfish.jersey.message,org.glassfish.jersey.server.model.internal,org.glassfish.jersey.process.internal,org.glassfish.jersey.server.monitoring,org.glassfish.jersey.process,org.glassfish.jersey.uri,org.glassfish.jersey.uri.internal,org.glassfish.jersey.server.internal.scanning,org.glassfish.jersey.internal.spi,org.glassfish.jersey.server.internal.inject,org.glassfish.jersey.spi"/>
+         <p n="version" t="version" v="2.22.2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.glassfish.jersey.jackson.internal"/>
+         <p n="uses:" v="org.glassfish.jersey.internal.util,javax.ws.rs.core,org.glassfish.jersey.message.filtering.spi,javax.inject,javax.annotation,org.glassfish.jersey.internal.spi,org.glassfish.jersey.jackson,org.glassfish.hk2.api,org.glassfish.hk2.utilities.binding"/>
+         <p n="version" t="version" v="2.22.2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.glassfish.hk2.utilities.cache"/>
+         <p n="uses:" v="org.glassfish.hk2.utilities.cache.internal"/>
+         <p n="version" t="version" v="2.4.0"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.glassfish.jersey.client.oauth1.internal"/>
+         <p n="uses:" v="org.glassfish.jersey.internal.l10n"/>
+         <p n="version" t="version" v="2.22.2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.glassfish.jersey.server.wadl.internal.generators.resourcedoc.xhtml"/>
+         <p n="uses:" v="javax.xml.bind,javax.xml.namespace,javax.xml.bind.annotation"/>
+         <p n="version" t="version" v="2.22.2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.glassfish.jersey.uri"/>
+         <p n="uses:" v="org.glassfish.jersey.uri.internal,org.glassfish.jersey.internal.util.collection,javax.ws.rs.core,org.glassfish.jersey.internal"/>
+         <p n="version" t="version" v="2.22.2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.glassfish.jersey.server.spi"/>
+         <p n="uses:" v="org.glassfish.hk2.api,javax.ws.rs,org.glassfish.jersey.spi,org.glassfish.jersey.server,javax.ws.rs.core,org.glassfish.jersey.server.model"/>
+         <p n="version" t="version" v="2.22.2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.glassfish.jersey.message.filtering"/>
+         <p n="uses:" v="org.glassfish.jersey.internal.inject,org.glassfish.jersey.message.filtering.spi,org.glassfish.jersey.model.internal,org.glassfish.jersey.message.filtering.internal,javax.inject,org.glassfish.hk2.api,javax.ws.rs.core,javax.annotation,org.glassfish.jersey.internal.util,org.glassfish.hk2.utilities.binding,javax.ws.rs,org.glassfish.jersey.internal.util.collection,javax.annotation.security,org.glassfish.jersey.server.filter,org.glassfish.jersey.server,org.glassfish.jersey.server.model"/>
+         <p n="version" t="version" v="2.22.2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.glassfish.jersey.client.filter"/>
+         <p n="uses:" v="javax.ws.rs.client,javax.ws.rs.core,org.glassfish.jersey.client,org.glassfish.jersey.spi,org.glassfish.jersey.internal.inject,org.glassfish.jersey.client.internal,org.glassfish.hk2.api,javax.inject"/>
+         <p n="version" t="version" v="2.22.2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.glassfish.jersey.servlet"/>
+         <p n="uses:" v="org.glassfish.jersey.uri,org.glassfish.jersey.servlet.internal,org.glassfish.jersey.server.spi,javax.ws.rs,org.glassfish.jersey.servlet.spi,org.glassfish.jersey.server,org.glassfish.jersey.internal.util.collection,org.glassfish.hk2.api,javax.servlet,org.glassfish.jersey.internal.inject,org.glassfish.jersey.server.internal,org.glassfish.jersey.internal.util,javax.ws.rs.core,javax.servlet.http,org.glassfish.jersey.internal,org.glassfish.jersey.server.internal.scanning,org.glassfish.jersey.servlet.internal.spi,javax.inject,org.glassfish.hk2.utilities,org.glassfish.hk2.utilities.binding,org.glassfish.jersey.process.internal,org.glassfish.jersey.message.internal"/>
+         <p n="version" t="version" v="2.22.2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.glassfish.jersey.media.sse"/>
+         <p n="uses:" v="org.glassfish.jersey.message,org.glassfish.jersey.client,org.glassfish.jersey.internal,javax.ws.rs.core,org.glassfish.jersey.message.internal,javax.ws.rs,javax.ws.rs.ext,javax.inject,org.glassfish.jersey.server,javax.ws.rs.client,org.glassfish.jersey.internal.util,org.glassfish.jersey.internal.l10n"/>
+         <p n="version" t="version" v="2.22.2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.glassfish.jersey.server.model"/>
+         <p n="uses:" v="javax.ws.rs,org.glassfish.jersey.internal.util,javax.ws.rs.core,org.glassfish.jersey.server.model.internal,org.glassfish.jersey.internal,org.glassfish.jersey,org.glassfish.jersey.message,org.glassfish.hk2.api,org.glassfish.jersey.process,javax.ws.rs.container,org.glassfish.jersey.server,org.glassfish.jersey.server.internal,org.glassfish.jersey.server.spi.internal,org.glassfish.jersey.internal.util.collection,org.glassfish.jersey.internal.inject,javax.inject,org.glassfish.jersey.spi,org.glassfish.jersey.uri,org.glassfish.jersey.message.internal,org.glassfish.jersey.model,org.glassfish.jersey.model.internal,javax.ws.rs.ext,org.glassfish.hk2.utilities.binding,org.glassfish.jersey.server.internal.inject,org.glassfish.jersey.server.internal.process,org.glassfish.hk2.utilities,org.glassfish.jersey.server.internal.routing,org.glassfish.jersey.server.monitoring"/>
+         <p n="version" t="version" v="2.22.2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.glassfish.hk2.utilities.reflection"/>
+         <p n="uses:" v="org.glassfish.hk2.utilities.general,org.glassfish.hk2.utilities.reflection.internal,javax.inject"/>
+         <p n="version" t="version" v="2.4.0"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.glassfish.jersey.server.model.internal"/>
+         <p n="uses:" v="org.glassfish.jersey.message.internal,javax.ws.rs,org.glassfish.jersey.internal,org.glassfish.jersey.server,org.glassfish.jersey.server.internal,org.glassfish.jersey.server.spi.internal,org.glassfish.jersey.server.model,org.glassfish.jersey.server.internal.process,org.glassfish.jersey.server.internal.inject,javax.ws.rs.core,javax.inject,org.glassfish.hk2.api,org.glassfish.jersey,javax.ws.rs.container,org.glassfish.jersey.process,org.glassfish.jersey.internal.inject,org.glassfish.hk2.utilities.binding,org.glassfish.jersey.server.wadl.processor"/>
+         <p n="version" t="version" v="2.22.2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.glassfish.jersey.message.filtering.spi"/>
+         <p n="uses:" v="org.glassfish.jersey.internal.util,javax.inject,org.glassfish.jersey.spi,org.glassfish.jersey.internal.util.collection,javax.xml.bind,org.glassfish.jersey.message.filtering"/>
+         <p n="version" t="version" v="2.22.2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.glassfish.jersey.server.wadl"/>
+         <p n="uses:" v="org.glassfish.jersey.server.wadl.internal,javax.xml.bind,org.glassfish.jersey.server.model,javax.ws.rs.core,org.glassfish.hk2.utilities.binding,javax.inject,org.glassfish.jersey.internal.util,org.glassfish.jersey.server.wadl.processor,javax.xml.namespace"/>
+         <p n="version" t="version" v="2.22.2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.glassfish.jersey.process.internal"/>
+         <p n="uses:" v="org.glassfish.jersey.spi,org.glassfish.hk2.api,org.glassfish.hk2.utilities.binding,org.glassfish.jersey.internal.inject,org.glassfish.jersey.internal,org.glassfish.jersey.internal.util,javax.inject,org.glassfish.jersey.process,org.glassfish.jersey.internal.util.collection"/>
+         <p n="version" t="version" v="2.22.2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.glassfish.jersey.server.filter.internal"/>
+         <p n="uses:" v="javax.annotation,org.glassfish.jersey.internal.spi,org.glassfish.jersey.server.filter,javax.ws.rs,javax.ws.rs.core"/>
+         <p n="version" t="version" v="2.22.2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.glassfish.jersey.internal.util"/>
+         <p n="uses:" v="javax.ws.rs,org.glassfish.jersey.internal,org.glassfish.jersey.internal.util.collection,org.osgi.framework,javax.ws.rs.core,javax.xml.parsers,javax.xml,javax.xml.namespace"/>
+         <p n="version" t="version" v="2.22.2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.glassfish.jersey.servlet.internal"/>
+         <p n="uses:" v="org.glassfish.jersey.internal.l10n,org.glassfish.hk2.api,javax.servlet,org.glassfish.jersey.server,javax.inject,org.glassfish.hk2.utilities.binding,org.glassfish.jersey.server.spi,org.glassfish.jersey.servlet.spi,org.glassfish.jersey.server.internal,javax.servlet.http,javax.ws.rs.core,org.glassfish.jersey.servlet.internal.spi,org.glassfish.jersey.internal,javax.naming"/>
+         <p n="version" t="version" v="2.22.2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.glassfish.jersey.server.oauth1"/>
+         <p n="uses:" v="javax.ws.rs.core,org.glassfish.jersey.internal.util.collection,javax.ws.rs.ext,javax.ws.rs,org.glassfish.jersey.spi,org.glassfish.jersey.oauth1.signature,javax.annotation,org.glassfish.jersey.server.model,org.glassfish.jersey.server.oauth1.internal,javax.ws.rs.container,org.glassfish.jersey.server,org.glassfish.jersey.internal.util,javax.inject"/>
+         <p n="version" t="version" v="2.22.2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.glassfish.jersey.server.mvc.internal"/>
+         <p n="uses:" v="org.glassfish.jersey.server.mvc.spi,org.glassfish.jersey.server.mvc,org.glassfish.jersey.internal.l10n,org.glassfish.hk2.utilities.binding,javax.inject,javax.ws.rs.ext,org.glassfish.jersey.server.model,javax.ws.rs.core,org.glassfish.jersey.message.internal,org.glassfish.jersey.server,org.glassfish.jersey.internal.util.collection,org.glassfish.jersey.internal.util,javax.annotation,javax.ws.rs,org.glassfish.jersey.internal,org.glassfish.jersey.server.internal.inject,javax.ws.rs.container,org.glassfish.jersey.process,org.glassfish.jersey.server.model.internal,org.glassfish.hk2.api,org.glassfish.jersey.internal.inject"/>
+         <p n="version" t="version" v="2.22.2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.glassfish.jersey.server.internal.routing"/>
+         <p n="uses:" v="org.glassfish.jersey.message.internal,javax.ws.rs.core,org.glassfish.jersey.server.model,org.glassfish.jersey.server,org.glassfish.jersey.server.internal.process,org.glassfish.jersey.process.internal,org.glassfish.jersey.process,javax.ws.rs,javax.ws.rs.container,org.glassfish.jersey.message,org.glassfish.jersey.server.internal,org.glassfish.jersey.uri,org.glassfish.jersey.internal,org.glassfish.hk2.api,org.glassfish.jersey.server.monitoring,org.glassfish.jersey.server.model.internal,org.glassfish.jersey.model.internal,org.glassfish.jersey.internal.inject,org.glassfish.jersey.internal.util.collection,org.glassfish.jersey.server.spi.internal,org.glassfish.jersey.uri.internal"/>
+         <p n="version" t="version" v="2.22.2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.glassfish.jersey"/>
+         <p n="uses:" v="javax.ws.rs,org.glassfish.jersey.internal.util,javax.ws.rs.core,org.glassfish.jersey.internal.inject,org.glassfish.jersey.internal,javax.ws.rs.ext,org.glassfish.hk2.api,javax.net.ssl"/>
+         <p n="version" t="version" v="2.22.2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.glassfish.jersey.uri.internal"/>
+         <p n="uses:" v="org.glassfish.jersey.uri,javax.ws.rs,org.glassfish.jersey.internal,org.glassfish.jersey.internal.util.collection,org.glassfish.jersey.internal.util,javax.ws.rs.core"/>
+         <p n="version" t="version" v="2.22.2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.glassfish.jersey.server.wadl.internal"/>
+         <p n="uses:" v="javax.ws.rs.core,org.glassfish.jersey.server.wadl,javax.xml.namespace,javax.ws.rs,org.glassfish.jersey.server.wadl.config,org.glassfish.jersey.server,org.glassfish.jersey.server.model,org.glassfish.hk2.api,org.glassfish.jersey.server.internal,org.glassfish.jersey.internal.util,javax.inject,javax.xml.bind,javax.annotation,org.glassfish.jersey.internal.spi,org.glassfish.jersey.internal,javax.xml.transform,javax.xml.parsers,javax.xml.transform.sax,org.xml.sax"/>
+         <p n="version" t="version" v="2.22.2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.glassfish.jersey.server.internal.inject"/>
+         <p n="uses:" v="org.glassfish.jersey.server,javax.inject,org.glassfish.hk2.api,org.glassfish.jersey.internal.util.collection,javax.ws.rs.ext,org.glassfish.jersey.internal.inject,javax.ws.rs,org.glassfish.jersey.server.spi.internal,org.glassfish.jersey.server.model,javax.ws.rs.container,org.glassfish.jersey.server.internal.process,org.glassfish.hk2.utilities,org.glassfish.hk2.utilities.cache,org.glassfish.jersey.process.internal,javax.ws.rs.core,org.glassfish.jersey.server.internal,org.glassfish.jersey.spi,org.glassfish.jersey.message.internal,org.glassfish.jersey.internal.util,org.glassfish.hk2.utilities.binding,org.glassfish.jersey.client,javax.ws.rs.client,org.glassfish.jersey.internal,org.glassfish.jersey.uri.internal"/>
+         <p n="version" t="version" v="2.22.2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.glassfish.jersey.server.internal.monitoring"/>
+         <p n="uses:" v="org.glassfish.jersey.server.monitoring,org.glassfish.jersey.server,org.glassfish.jersey.server.model,javax.annotation,org.glassfish.jersey.internal.util.collection,javax.inject,javax.ws.rs.container,javax.ws.rs.ext,org.glassfish.jersey.internal.spi,javax.ws.rs,javax.ws.rs.core,org.glassfish.jersey.server.spi,org.glassfish.hk2.utilities.binding,org.glassfish.jersey.uri,org.glassfish.jersey.server.internal,org.glassfish.hk2.api,org.glassfish.jersey.internal.inject,org.glassfish.jersey.server.internal.monitoring.jmx,org.glassfish.jersey.internal.util"/>
+         <p n="version" t="version" v="2.22.2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.glassfish.jersey.internal.spi"/>
+         <p n="uses:" v="javax.ws.rs.core"/>
+         <p n="version" t="version" v="2.22.2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.glassfish.jersey.internal.util.collection"/>
+         <p n="uses:" v="org.glassfish.jersey.internal,org.glassfish.jersey.internal.util,javax.ws.rs.core"/>
+         <p n="version" t="version" v="2.22.2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.glassfish.jersey.internal.sonar"/>
+         <p n="version" t="version" v="2.22.2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.glassfish.jersey.server.oauth1.internal"/>
+         <p n="uses:" v="javax.ws.rs,org.glassfish.jersey.server.oauth1,javax.ws.rs.container,org.glassfish.jersey.oauth1.signature,javax.inject,javax.ws.rs.core,org.glassfish.jersey.server,org.glassfish.jersey.internal.util.collection"/>
+         <p n="version" t="version" v="2.22.2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.glassfish.jersey.client.authentication"/>
+         <p n="uses:" v="org.glassfish.jersey.client.internal,org.glassfish.jersey.internal.util,javax.ws.rs.client,javax.ws.rs.core,org.glassfish.jersey.uri,org.glassfish.jersey.message,org.glassfish.jersey.client,javax.annotation,javax.ws.rs"/>
+         <p n="version" t="version" v="2.22.2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.glassfish.jersey.server.mvc"/>
+         <p n="uses:" v="javax.ws.rs,org.glassfish.jersey.server.mvc.internal,javax.ws.rs.core"/>
+         <p n="version" t="version" v="2.22.2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.glassfish.jersey.server.wadl.processor"/>
+         <p n="uses:" v="org.glassfish.jersey.server.model.internal,javax.ws.rs.container,org.glassfish.jersey.server,javax.inject,org.glassfish.jersey.server.model,org.glassfish.jersey.process,javax.ws.rs.core,javax.annotation,org.glassfish.jersey.message.internal,javax.ws.rs,org.glassfish.jersey.server.wadl.internal,org.glassfish.jersey.server.wadl,javax.xml.bind,org.glassfish.jersey.internal.util"/>
+         <p n="version" t="version" v="2.22.2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.glassfish.hk2.utilities"/>
+         <p n="uses:" v="org.glassfish.hk2.utilities.reflection,javax.inject,org.glassfish.hk2.api,org.glassfish.hk2.utilities.general,org.glassfish.hk2.internal,org.glassfish.hk2.utilities.binding"/>
+         <p n="version" t="version" v="2.4.0"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.glassfish.jersey.media.multipart"/>
+         <p n="uses:" v="org.glassfish.jersey.message.internal,javax.ws.rs,org.glassfish.jersey.media.multipart.internal,org.glassfish.jersey.internal.util.collection,javax.ws.rs.ext,org.glassfish.jersey.message,javax.ws.rs.core,org.glassfish.jersey.server.model,org.glassfish.jersey.server,org.glassfish.jersey.internal.util"/>
+         <p n="version" t="version" v="2.22.2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.glassfish.hk2.api.messaging"/>
+         <p n="uses:" v="javax.inject,org.glassfish.hk2.api"/>
+         <p n="version" t="version" v="2.4.0"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.glassfish.jersey.server.wadl.internal.generators.resourcedoc"/>
+         <p n="uses:" v="org.glassfish.jersey.server.internal,org.glassfish.jersey.server.wadl.internal.generators.resourcedoc.model,org.glassfish.jersey.server.model,org.glassfish.jersey.server.wadl.internal.generators.resourcedoc.xhtml,javax.xml.parsers,javax.xml.namespace,org.glassfish.jersey.server.wadl.internal,org.glassfish.jersey.server.wadl,javax.inject,javax.ws.rs.core"/>
+         <p n="version" t="version" v="2.22.2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.glassfish.hk2.extension"/>
+         <p n="uses:" v="org.glassfish.hk2.api"/>
+         <p n="version" t="version" v="2.4.0"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.glassfish.jersey.jackson"/>
+         <p n="uses:" v="javax.ws.rs,org.glassfish.jersey.message.filtering,org.glassfish.jersey.internal,javax.ws.rs.ext,org.glassfish.jersey,org.glassfish.jersey.jackson.internal,org.glassfish.jersey.internal.util,javax.ws.rs.core"/>
+         <p n="version" t="version" v="2.22.2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.glassfish.hk2.osgiresourcelocator"/>
+         <p n="uses:" v="org.osgi.framework"/>
+         <p n="version" t="version" v="1.0.1"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.glassfish.jersey.message.filtering.internal"/>
+         <p n="uses:" v="org.glassfish.jersey.internal.l10n"/>
+         <p n="version" t="version" v="2.22.2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.glassfish.jersey.server.wadl.internal.generators"/>
+         <p n="uses:" v="javax.xml.bind.annotation,org.glassfish.jersey.server.wadl.internal,org.glassfish.jersey.server.wadl,javax.xml.parsers,javax.inject,org.glassfish.jersey.server.model,javax.ws.rs.core,javax.xml.namespace,javax.xml.transform,javax.xml.transform.stream,javax.xml.bind"/>
+         <p n="version" t="version" v="2.22.2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.glassfish.jersey.process"/>
+         <p n="uses:" v="org.glassfish.jersey.internal"/>
+         <p n="version" t="version" v="2.22.2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.glassfish.jersey.server.internal.sonar"/>
+         <p n="version" t="version" v="2.22.2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.glassfish.jersey.message.internal"/>
+         <p n="uses:" v="javax.ws.rs,javax.ws.rs.core,javax.ws.rs.ext,org.glassfish.jersey.internal,org.glassfish.jersey.internal.util,javax.inject,org.glassfish.jersey.spi,javax.activation,org.glassfish.jersey.internal.util.collection,org.glassfish.jersey.message,javax.xml.transform,org.glassfish.jersey.uri,org.glassfish.jersey.uri.internal,org.glassfish.hk2.utilities.binding,org.glassfish.hk2.api,org.glassfish.jersey.internal.inject,org.glassfish.hk2.utilities,org.glassfish.jersey,javax.imageio,javax.imageio.stream,javax.imageio.spi,javax.xml.parsers,javax.xml.transform.dom,org.w3c.dom,org.xml.sax,javax.xml.transform.sax,javax.xml.transform.stream,javax.annotation"/>
+         <p n="version" t="version" v="2.22.2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.glassfish.jersey.internal"/>
+         <p n="uses:" v="org.glassfish.jersey.message.internal,org.glassfish.jersey.uri.internal,org.glassfish.jersey.internal.inject,org.glassfish.jersey.spi,javax.ws.rs.ext,org.glassfish.hk2.api,javax.ws.rs.core,org.glassfish.hk2.utilities.binding,javax.inject,javax.ws.rs,org.glassfish.jersey.internal.util.collection,org.glassfish.jersey.internal.util,org.glassfish.jersey,org.glassfish.jersey.message,org.glassfish.jersey.internal.l10n,org.osgi.framework,org.glassfish.hk2.utilities"/>
+         <p n="version" t="version" v="2.22.2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.glassfish.jersey.model"/>
+         <p n="uses:" v="javax.inject"/>
+         <p n="version" t="version" v="2.22.2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.glassfish.jersey.server.wadl.internal.generators.resourcedoc.model"/>
+         <p n="uses:" v="javax.xml.bind.annotation,javax.xml.namespace"/>
+         <p n="version" t="version" v="2.22.2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.glassfish.jersey.server.internal.process"/>
+         <p n="uses:" v="javax.ws.rs.container,org.glassfish.jersey.internal.util,javax.ws.rs.core,org.glassfish.jersey.server,org.glassfish.jersey.server.internal,org.glassfish.jersey.process.internal,org.glassfish.jersey.process,javax.ws.rs,org.glassfish.jersey.server.spi,org.glassfish.jersey.internal.util.collection,javax.inject,org.glassfish.hk2.api,org.glassfish.jersey.server.monitoring,org.glassfish.jersey.server.internal.monitoring,org.glassfish.jersey.server.internal.routing,org.glassfish.jersey.internal.inject,org.glassfish.jersey.spi,org.glassfish.hk2.utilities.binding"/>
+         <p n="version" t="version" v="2.22.2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.glassfish.jersey.oauth1.signature.internal"/>
+         <p n="uses:" v="org.glassfish.jersey.internal.l10n"/>
+         <p n="version" t="version" v="2.22.2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.glassfish.jersey.media.multipart.file"/>
+         <p n="uses:" v="javax.ws.rs.core,org.glassfish.jersey.media.multipart"/>
+         <p n="version" t="version" v="2.22.2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.glassfish.hk2.utilities.cache.internal"/>
+         <p n="uses:" v="org.glassfish.hk2.utilities.cache,org.glassfish.hk2.utilities.general"/>
+         <p n="version" t="version" v="2.22.2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.glassfish.jersey.servlet.internal.spi"/>
+         <p n="uses:" v="org.glassfish.hk2.api,javax.servlet,org.glassfish.jersey.server,javax.servlet.http,org.glassfish.jersey.server.spi"/>
+         <p n="version" t="version" v="2.22.2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.glassfish.jersey.server.spi.internal"/>
+         <p n="uses:" v="org.glassfish.jersey.server.model,org.glassfish.hk2.api,org.glassfish.jersey.message.internal,org.glassfish.jersey.internal.inject,javax.ws.rs,org.glassfish.jersey.server.internal.process,org.glassfish.jersey.server.internal.inject,org.glassfish.jersey.server,javax.ws.rs.core,org.glassfish.jersey.spi"/>
+         <p n="version" t="version" v="2.22.2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.glassfish.jersey.servlet.async"/>
+         <p n="uses:" v="javax.servlet,org.glassfish.jersey.servlet.init.internal,org.glassfish.jersey.servlet.spi,javax.servlet.http"/>
+         <p n="version" t="version" v="2.22.2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.glassfish.jersey.client.oauth2.internal"/>
+         <p n="uses:" v="org.glassfish.jersey.internal.l10n"/>
+         <p n="version" t="version" v="2.22.2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.glassfish.jersey.media.sse.internal"/>
+         <p n="uses:" v="javax.annotation,org.glassfish.jersey.internal.spi,javax.ws.rs,org.glassfish.jersey.media.sse,org.glassfish.jersey.internal.util,javax.ws.rs.core"/>
+         <p n="version" t="version" v="2.22.2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.glassfish.jersey.client.spi"/>
+         <p n="uses:" v="org.glassfish.jersey.client,javax.ws.rs.client,javax.ws.rs.core,org.glassfish.jersey.process,javax.net.ssl"/>
+         <p n="version" t="version" v="2.22.2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.glassfish.jersey.client"/>
+         <p n="uses:" v="javax.ws.rs,org.glassfish.jersey.client.internal,org.glassfish.jersey.message,org.glassfish.jersey.internal,javax.ws.rs.core,org.glassfish.jersey.internal.util,javax.ws.rs.ext,javax.inject,org.glassfish.hk2.api,org.glassfish.jersey.internal.inject,org.glassfish.jersey.internal.util.collection,org.glassfish.jersey.message.internal,org.glassfish.hk2.utilities,org.glassfish.jersey.internal.spi,org.glassfish.hk2.utilities.binding,org.glassfish.jersey.spi,org.glassfish.jersey.process.internal,org.glassfish.jersey.model.internal,org.glassfish.jersey.client.spi,org.glassfish.jersey,javax.ws.rs.client,javax.net.ssl"/>
+         <p n="version" t="version" v="2.22.2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.glassfish.jersey.server.mvc.spi"/>
+         <p n="uses:" v="org.glassfish.jersey.spi,org.glassfish.jersey.server,org.glassfish.jersey.server.mvc.internal,org.glassfish.jersey.server.mvc,javax.inject,org.glassfish.jersey.server.model,org.glassfish.hk2.api,javax.ws.rs.core,javax.servlet,org.glassfish.jersey.internal.util.collection,org.glassfish.jersey.internal.util,javax.ws.rs"/>
+         <p n="version" t="version" v="2.22.2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.glassfish.jersey.spi"/>
+         <p n="uses:" v="org.glassfish.jersey.internal.util.collection,org.glassfish.jersey.internal.util,org.glassfish.jersey.internal,org.glassfish.jersey.process,javax.annotation,javax.ws.rs,javax.ws.rs.ext,javax.ws.rs.core"/>
+         <p n="version" t="version" v="2.22.2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.glassfish.hk2.internal"/>
+         <p n="uses:" v="org.glassfish.hk2.utilities,org.glassfish.hk2.api,javax.inject,org.glassfish.hk2.utilities.reflection,org.glassfish.hk2.utilities.general,org.glassfish.hk2.extension,org.glassfish.hk2.osgiresourcelocator"/>
+         <p n="version" t="version" v="2.22.2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.glassfish.jersey.servlet.init"/>
+         <p n="uses:" v="javax.servlet,org.glassfish.jersey.servlet.spi,org.glassfish.jersey.servlet.internal,org.glassfish.jersey.servlet.internal.spi,javax.ws.rs,org.glassfish.jersey.servlet,org.glassfish.jersey.server,javax.ws.rs.ext,javax.servlet.annotation,org.glassfish.jersey.servlet.init.internal,javax.ws.rs.core"/>
+         <p n="version" t="version" v="2.22.2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.glassfish.jersey.server.internal.scanning"/>
+         <p n="uses:" v="org.glassfish.jersey.internal,org.glassfish.jersey.server.internal,org.glassfish.jersey.internal.util,javax.ws.rs,javax.ws.rs.ext,org.glassfish.jersey.server,org.glassfish.jersey.uri"/>
+         <p n="version" t="version" v="2.22.2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.glassfish.hk2.utilities.reflection.internal"/>
+         <p n="uses:" v="org.glassfish.hk2.utilities.cache,org.glassfish.hk2.utilities.reflection,javax.annotation"/>
+         <p n="version" t="version" v="2.4.0"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.glassfish.hk2.utilities.general"/>
+         <p n="uses:" v="org.glassfish.hk2.utilities.general.internal,org.glassfish.hk2.utilities.cache"/>
+         <p n="version" t="version" v="2.4.0"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.glassfish.jersey.internal.l10n"/>
+         <p n="uses:" v="org.glassfish.jersey.internal,org.glassfish.hk2.osgiresourcelocator,org.glassfish.jersey.internal.util"/>
+         <p n="version" t="version" v="2.22.2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.glassfish.jersey.jaxb.internal"/>
+         <p n="uses:" v="javax.xml.bind.annotation,org.glassfish.jersey.message.internal,javax.ws.rs,javax.ws.rs.ext,javax.xml.stream,javax.xml.bind,javax.ws.rs.core,org.glassfish.jersey.internal,org.glassfish.jersey.internal.util.collection,org.glassfish.jersey.message,org.glassfish.jersey.internal.util,javax.xml.parsers,org.xml.sax,javax.xml.transform.sax,javax.xml.transform,javax.xml.transform.stream,javax.inject,org.glassfish.hk2.api,javax.xml.transform.dom,org.w3c.dom,org.glassfish.jersey.internal.spi,org.glassfish.hk2.utilities.binding,org.glassfish.jersey.internal.inject,org.glassfish.jersey.internal.l10n,javax.xml.validation,org.xml.sax.helpers,javax.xml"/>
+         <p n="version" t="version" v="2.22.2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.glassfish.hk2.utilities.general.internal"/>
+         <p n="uses:" v="org.glassfish.hk2.utilities.cache,org.glassfish.hk2.utilities.general"/>
+         <p n="version" t="version" v="2.22.2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.glassfish.jersey.client.internal"/>
+         <p n="uses:" v="org.glassfish.jersey.client,org.glassfish.jersey.internal.util.collection,javax.ws.rs.client,javax.net.ssl,javax.ws.rs.core,javax.ws.rs,org.glassfish.jersey.client.spi,org.glassfish.jersey.message.internal,org.glassfish.jersey.internal.util,org.glassfish.jersey.internal.l10n"/>
+         <p n="version" t="version" v="2.22.2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.glassfish.jersey.client.oauth1"/>
+         <p n="uses:" v="javax.ws.rs.client,javax.ws.rs.core,org.glassfish.jersey.internal.util.collection,org.glassfish.jersey.oauth1.signature,org.glassfish.jersey.filter,javax.ws.rs,org.glassfish.jersey.client.oauth1.internal,org.glassfish.jersey.message,javax.annotation,javax.inject,org.glassfish.jersey.uri,javax.ws.rs.ext"/>
+         <p n="version" t="version" v="2.22.2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.glassfish.hk2.utilities.binding"/>
+         <p n="uses:" v="org.glassfish.hk2.api,org.glassfish.hk2.utilities,org.glassfish.hk2.utilities.reflection,javax.inject"/>
+         <p n="version" t="version" v="2.4.0"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.glassfish.jersey.server.wadl.config"/>
+         <p n="uses:" v="org.glassfish.jersey.server.wadl,javax.ws.rs,org.glassfish.jersey.server.internal,org.glassfish.hk2.api,org.glassfish.jersey.internal.util,org.glassfish.jersey.internal.inject,org.glassfish.jersey.server.wadl.internal.generators"/>
+         <p n="version" t="version" v="2.22.2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.glassfish.jersey.client.oauth2"/>
+         <p n="uses:" v="javax.ws.rs.client,javax.ws.rs.core,org.glassfish.jersey.message,javax.ws.rs,org.glassfish.jersey.internal,javax.ws.rs.ext,javax.inject,org.glassfish.jersey.jackson,org.glassfish.jersey.client.oauth2.internal,javax.annotation,org.glassfish.jersey.message.internal"/>
+         <p n="version" t="version" v="2.22.2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.glassfish.jersey.servlet.spi"/>
+         <p n="uses:" v="javax.servlet.http,javax.servlet"/>
+         <p n="version" t="version" v="2.22.2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.glassfish.jersey.oauth1.signature"/>
+         <p n="uses:" v="org.glassfish.jersey.oauth1.signature.internal,javax.crypto.spec,org.glassfish.jersey.uri,javax.crypto,javax.inject,org.glassfish.hk2.api,org.glassfish.hk2.utilities.binding,javax.ws.rs.core,org.glassfish.jersey.spi"/>
+         <p n="version" t="version" v="2.22.2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.glassfish.hk2.api"/>
+         <p n="uses:" v="javax.inject,org.glassfish.hk2.utilities,org.glassfish.hk2.extension,org.glassfish.hk2.internal"/>
+         <p n="version" t="version" v="2.4.0"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.glassfish.jersey.message"/>
+         <p n="uses:" v="org.glassfish.jersey.internal.util,javax.ws.rs.core,javax.annotation,org.glassfish.jersey.spi,javax.inject,javax.ws.rs,org.glassfish.jersey.internal,javax.ws.rs.ext,org.glassfish.jersey.message.internal"/>
+         <p n="version" t="version" v="2.22.2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.glassfish.jersey.filter"/>
+         <p n="uses:" v="javax.annotation,javax.ws.rs,javax.ws.rs.container,javax.ws.rs.ext,org.glassfish.jersey.message,javax.ws.rs.client,javax.ws.rs.core"/>
+         <p n="version" t="version" v="2.22.2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.glassfish.jersey.internal.inject"/>
+         <p n="uses:" v="org.glassfish.hk2.utilities.cache,org.glassfish.hk2.api,org.glassfish.hk2.utilities,org.glassfish.jersey.process.internal,org.glassfish.jersey.internal.util.collection,org.glassfish.hk2.utilities.binding,javax.inject,org.glassfish.jersey.internal.util,javax.ws.rs,org.glassfish.hk2.extension,org.glassfish.jersey.internal,org.glassfish.jersey.model.internal,org.glassfish.jersey.model,javax.ws.rs.container,javax.ws.rs.ext,org.glassfish.jersey.spi,javax.ws.rs.client,javax.ws.rs.core"/>
+         <p n="version" t="version" v="2.22.2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.glassfish.jersey.servlet.init.internal"/>
+         <p n="uses:" v="org.glassfish.jersey.internal.l10n"/>
+         <p n="version" t="version" v="2.22.2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.glassfish.jersey.server.monitoring"/>
+         <p n="uses:" v="org.glassfish.jersey.server,org.glassfish.jersey.server.model,javax.ws.rs,org.glassfish.jersey.spi,javax.ws.rs.container,javax.ws.rs.ext"/>
+         <p n="version" t="version" v="2.22.2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.glassfish.jersey.server.internal"/>
+         <p n="uses:" v="org.glassfish.jersey.server,org.glassfish.jersey.internal.util,org.glassfish.jersey.server.spi,org.glassfish.hk2.utilities.binding,javax.ws.rs.container,javax.inject,org.glassfish.hk2.utilities,org.glassfish.jersey.model,org.glassfish.jersey.server.model,org.glassfish.hk2.api,org.glassfish.jersey.internal.inject,org.glassfish.jersey.process.internal,javax.annotation,javax.ws.rs,javax.ws.rs.ext,org.glassfish.jersey.message,javax.ws.rs.core,org.glassfish.jersey.internal.l10n,org.glassfish.jersey.message.internal,org.glassfish.jersey.server.internal.process,org.glassfish.jersey.internal.util.collection,org.glassfish.jersey.model.internal,org.glassfish.jersey.internal"/>
+         <p n="version" t="version" v="2.22.2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="javax.inject"/>
+         <p n="version" t="version" v="1"/>
+      </capability>
+      <require name="package" filter="(&amp;(package=javax.activation)(version&gt;=0.0.0))" extend="false" multiple="false" optional="false">Import package javax.activation</require>
+      <require name="package" filter="(&amp;(package=javax.annotation)(&amp;(version&gt;=1.2.0)(!(version&gt;=2.0.0))))" extend="false" multiple="false" optional="false">Import package javax.annotation</require>
+      <require name="package" filter="(&amp;(package=javax.crypto)(version&gt;=0.0.0))" extend="false" multiple="false" optional="false">Import package javax.crypto</require>
+      <require name="package" filter="(&amp;(package=javax.crypto.spec)(version&gt;=0.0.0))" extend="false" multiple="false" optional="false">Import package javax.crypto.spec</require>
+      <require name="package" filter="(&amp;(package=javax.imageio)(version&gt;=0.0.0))" extend="false" multiple="false" optional="false">Import package javax.imageio</require>
+      <require name="package" filter="(&amp;(package=javax.imageio.spi)(version&gt;=0.0.0))" extend="false" multiple="false" optional="false">Import package javax.imageio.spi</require>
+      <require name="package" filter="(&amp;(package=javax.imageio.stream)(version&gt;=0.0.0))" extend="false" multiple="false" optional="false">Import package javax.imageio.stream</require>
+      <require name="package" filter="(&amp;(package=javax.inject)(&amp;(version&gt;=1.0.0)(!(version&gt;=2.0.0))))" extend="false" multiple="false" optional="false">Import package javax.inject</require>
+      <require name="package" filter="(&amp;(package=javax.management)(version&gt;=0.0.0))" extend="false" multiple="false" optional="false">Import package javax.management</require>
+      <require name="package" filter="(&amp;(package=javax.naming)(version&gt;=0.0.0))" extend="false" multiple="false" optional="false">Import package javax.naming</require>
+      <require name="package" filter="(&amp;(package=javax.net.ssl)(version&gt;=0.0.0))" extend="false" multiple="false" optional="false">Import package javax.net.ssl</require>
+      <require name="package" filter="(&amp;(package=javax.servlet)(&amp;(version&gt;=2.3.0)(!(version&gt;=4.0.0))))" extend="false" multiple="false" optional="true">Import package javax.servlet</require>
+      <require name="package" filter="(&amp;(package=javax.servlet.annotation)(&amp;(version&gt;=2.3.0)(!(version&gt;=4.0.0))))" extend="false" multiple="false" optional="true">Import package javax.servlet.annotation</require>
+      <require name="package" filter="(&amp;(package=javax.servlet.http)(&amp;(version&gt;=2.3.0)(!(version&gt;=4.0.0))))" extend="false" multiple="false" optional="true">Import package javax.servlet.http</require>
+      <require name="package" filter="(&amp;(package=javax.ws.rs)(&amp;(version&gt;=2.0.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package javax.ws.rs</require>
+      <require name="package" filter="(&amp;(package=javax.ws.rs.core)(&amp;(version&gt;=2.0.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package javax.ws.rs.core</require>
+      <require name="package" filter="(&amp;(package=javax.ws.rs.ext)(&amp;(version&gt;=2.0.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package javax.ws.rs.ext</require>
+      <require name="package" filter="(&amp;(package=javax.xml)(version&gt;=0.0.0))" extend="false" multiple="false" optional="false">Import package javax.xml</require>
+      <require name="package" filter="(&amp;(package=javax.xml.bind)(version&gt;=0.0.0))" extend="false" multiple="false" optional="false">Import package javax.xml.bind</require>
+      <require name="package" filter="(&amp;(package=javax.xml.bind.annotation)(version&gt;=0.0.0))" extend="false" multiple="false" optional="false">Import package javax.xml.bind.annotation</require>
+      <require name="package" filter="(&amp;(package=javax.xml.bind.annotation.adapters)(version&gt;=0.0.0))" extend="false" multiple="false" optional="false">Import package javax.xml.bind.annotation.adapters</require>
+      <require name="package" filter="(&amp;(package=javax.xml.datatype)(version&gt;=0.0.0))" extend="false" multiple="false" optional="false">Import package javax.xml.datatype</require>
+      <require name="package" filter="(&amp;(package=javax.xml.namespace)(version&gt;=0.0.0))" extend="false" multiple="false" optional="false">Import package javax.xml.namespace</require>
+      <require name="package" filter="(&amp;(package=javax.xml.parsers)(version&gt;=0.0.0))" extend="false" multiple="false" optional="false">Import package javax.xml.parsers</require>
+      <require name="package" filter="(&amp;(package=javax.xml.stream)(version&gt;=0.0.0))" extend="false" multiple="false" optional="false">Import package javax.xml.stream</require>
+      <require name="package" filter="(&amp;(package=javax.xml.transform)(version&gt;=0.0.0))" extend="false" multiple="false" optional="false">Import package javax.xml.transform</require>
+      <require name="package" filter="(&amp;(package=javax.xml.transform.dom)(version&gt;=0.0.0))" extend="false" multiple="false" optional="false">Import package javax.xml.transform.dom</require>
+      <require name="package" filter="(&amp;(package=javax.xml.transform.sax)(version&gt;=0.0.0))" extend="false" multiple="false" optional="false">Import package javax.xml.transform.sax</require>
+      <require name="package" filter="(&amp;(package=javax.xml.transform.stream)(version&gt;=0.0.0))" extend="false" multiple="false" optional="false">Import package javax.xml.transform.stream</require>
+      <require name="package" filter="(&amp;(package=javax.xml.validation)(version&gt;=0.0.0))" extend="false" multiple="false" optional="false">Import package javax.xml.validation</require>
+      <require name="package" filter="(&amp;(package=org.glassfish.hk2.extension)(&amp;(version&gt;=2.4.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package org.glassfish.hk2.extension</require>
+      <require name="package" filter="(&amp;(package=org.glassfish.hk2.utilities.cache)(&amp;(version&gt;=2.4.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package org.glassfish.hk2.utilities.cache</require>
+      <require name="package" filter="(&amp;(package=org.glassfish.hk2.utilities.general)(&amp;(version&gt;=2.4.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package org.glassfish.hk2.utilities.general</require>
+      <require name="package" filter="(&amp;(package=org.glassfish.hk2.utilities.reflection)(&amp;(version&gt;=2.4.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package org.glassfish.hk2.utilities.reflection</require>
+      <require name="package" filter="(&amp;(package=org.glassfish.hk2.utilities.reflection.internal)(&amp;(version&gt;=2.4.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package org.glassfish.hk2.utilities.reflection.internal</require>
+      <require name="package" filter="(&amp;(package=org.osgi.framework)(version&gt;=0.0.0))" extend="false" multiple="false" optional="false">Import package org.osgi.framework</require>
+      <require name="package" filter="(&amp;(package=org.w3c.dom)(version&gt;=0.0.0))" extend="false" multiple="false" optional="false">Import package org.w3c.dom</require>
+      <require name="package" filter="(&amp;(package=org.w3c.dom.bootstrap)(version&gt;=0.0.0))" extend="false" multiple="false" optional="false">Import package org.w3c.dom.bootstrap</require>
+      <require name="package" filter="(&amp;(package=org.w3c.dom.ls)(version&gt;=0.0.0))" extend="false" multiple="false" optional="false">Import package org.w3c.dom.ls</require>
+      <require name="package" filter="(&amp;(package=org.xml.sax)(version&gt;=0.0.0))" extend="false" multiple="false" optional="false">Import package org.xml.sax</require>
+      <require name="package" filter="(&amp;(package=org.xml.sax.helpers)(version&gt;=0.0.0))" extend="false" multiple="false" optional="false">Import package org.xml.sax.helpers</require>
+   </resource>
+   <resource id="com.pavlovmedia.oss.jaxrs.publisher/1.0.2" symbolicname="com.pavlovmedia.oss.jaxrs.publisher" version="1.0.2" presentationname="JAX-RS Services Publisher" uri="http://repo1.maven.org/maven2/com/pavlovmedia/oss/jaxrs/com.pavlovmedia.oss.jaxrs.publisher/1.0.2/com.pavlovmedia.oss.jaxrs.publisher-1.0.2.jar">
+      <description>This project is a wrapper around the Jersey implementation of the    JAX-RS specification.  It is designed to be deployed into OSGi and     will scan services for instances that JAX-RS can use.</description>
+      <size>37436</size>
+      <license>http://www.apache.org/licenses/LICENSE-2.0.txt</license>
+      <category id="JAX-RS"/>
+      <capability name="bundle">
+         <p n="symbolicname" v="com.pavlovmedia.oss.jaxrs.publisher"/>
+         <p n="presentationname" v="JAX-RS Services Publisher"/>
+         <p n="version" t="version" v="1.0.2"/>
+         <p n="manifestversion" v="2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="com.pavlovmedia.oss.jaxrs.publisher.api"/>
+         <p n="version" t="version" v="1.0.2"/>
+         <p n="uses:" v="javax.ws.rs.core"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="com.pavlovmedia.osgi.oss.utilities.api.component"/>
+         <p n="version" t="version" v="1.0.2"/>
+         <p n="uses:" v="com.pavlovmedia.osgi.oss.utilities.api.functional,org.osgi.service.component"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="com.pavlovmedia.osgi.oss.utilities.api.functional"/>
+         <p n="version" t="version" v="1.0.2"/>
+      </capability>
+      <require name="package" filter="(&amp;(package=com.pavlovmedia.osgi.oss.utilities.api.component)(&amp;(version&gt;=1.0.0)(!(version&gt;=2.0.0))))" extend="false" multiple="false" optional="false">Import package com.pavlovmedia.osgi.oss.utilities.api.component</require>
+      <require name="package" filter="(&amp;(package=com.pavlovmedia.osgi.oss.utilities.api.functional)(&amp;(version&gt;=1.0.0)(!(version&gt;=2.0.0))))" extend="false" multiple="false" optional="false">Import package com.pavlovmedia.osgi.oss.utilities.api.functional</require>
+      <require name="package" filter="(&amp;(package=com.pavlovmedia.oss.jaxrs.publisher.api)(&amp;(version&gt;=1.0.0)(!(version&gt;=2.0.0))))" extend="false" multiple="false" optional="false">Import package com.pavlovmedia.oss.jaxrs.publisher.api</require>
+      <require name="package" filter="(&amp;(package=io.swagger.annotations)(&amp;(version&gt;=1.5.0)(!(version&gt;=2.0.0))))" extend="false" multiple="false" optional="true">Import package io.swagger.annotations</require>
+      <require name="package" filter="(&amp;(package=io.swagger.config)(&amp;(version&gt;=1.5.0)(!(version&gt;=2.0.0))))" extend="false" multiple="false" optional="true">Import package io.swagger.config</require>
+      <require name="package" filter="(&amp;(package=io.swagger.jaxrs.config)(&amp;(version&gt;=1.5.0)(!(version&gt;=2.0.0))))" extend="false" multiple="false" optional="true">Import package io.swagger.jaxrs.config</require>
+      <require name="package" filter="(&amp;(package=io.swagger.jaxrs.listing)(&amp;(version&gt;=1.5.0)(!(version&gt;=2.0.0))))" extend="false" multiple="false" optional="true">Import package io.swagger.jaxrs.listing</require>
+      <require name="package" filter="(&amp;(package=io.swagger.models)(&amp;(version&gt;=1.5.0)(!(version&gt;=2.0.0))))" extend="false" multiple="false" optional="true">Import package io.swagger.models</require>
+      <require name="package" filter="(&amp;(package=javax.servlet)(&amp;(version&gt;=3.1.0)(!(version&gt;=4.0.0))))" extend="false" multiple="false" optional="false">Import package javax.servlet</require>
+      <require name="package" filter="(&amp;(package=javax.ws.rs)(&amp;(version&gt;=2.0.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package javax.ws.rs</require>
+      <require name="package" filter="(&amp;(package=javax.ws.rs.core)(&amp;(version&gt;=2.0.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package javax.ws.rs.core</require>
+      <require name="package" filter="(&amp;(package=javax.ws.rs.ext)(&amp;(version&gt;=2.0.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package javax.ws.rs.ext</require>
+      <require name="package" filter="(&amp;(package=org.glassfish.jersey.media.sse)(&amp;(version&gt;=2.22.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="true">Import package org.glassfish.jersey.media.sse</require>
+      <require name="package" filter="(&amp;(package=org.glassfish.jersey.server)(&amp;(version&gt;=2.22.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package org.glassfish.jersey.server</require>
+      <require name="package" filter="(&amp;(package=org.glassfish.jersey.servlet)(&amp;(version&gt;=2.22.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package org.glassfish.jersey.servlet</require>
+      <require name="package" filter="(&amp;(package=org.osgi.framework)(&amp;(version&gt;=1.4.0)(!(version&gt;=2.0.0))))" extend="false" multiple="false" optional="false">Import package org.osgi.framework</require>
+      <require name="package" filter="(&amp;(package=org.osgi.service.component)(&amp;(version&gt;=1.2.0)(!(version&gt;=2.0.0))))" extend="false" multiple="false" optional="false">Import package org.osgi.service.component</require>
+      <require name="package" filter="(&amp;(package=org.osgi.service.http)(&amp;(version&gt;=1.2.0)(!(version&gt;=2.0.0))))" extend="false" multiple="false" optional="false">Import package org.osgi.service.http</require>
+      <require name="package" filter="(&amp;(package=org.osgi.service.log)(&amp;(version&gt;=1.3.0)(!(version&gt;=2.0.0))))" extend="false" multiple="false" optional="false">Import package org.osgi.service.log</require>
+   </resource>
+   <resource id="com.pavlovmedia.oss.jaxrs.webconsole/1.0.2" symbolicname="com.pavlovmedia.oss.jaxrs.webconsole" version="1.0.2" presentationname="JAX-RS Services Webconsole Support" uri="http://repo1.maven.org/maven2/com/pavlovmedia/oss/jaxrs/com.pavlovmedia.oss.jaxrs.webconsole/1.0.2/com.pavlovmedia.oss.jaxrs.webconsole-1.0.2.jar">
+      <description>This project is a wrapper around the Jersey implementation of the    JAX-RS specification.  It is designed to be deployed into OSGi and     will scan services for instances that JAX-RS can use.</description>
+      <size>7586</size>
+      <license>http://www.apache.org/licenses/LICENSE-2.0.txt</license>
+      <category id="JAX-RS"/>
+      <capability name="bundle">
+         <p n="symbolicname" v="com.pavlovmedia.oss.jaxrs.webconsole"/>
+         <p n="presentationname" v="JAX-RS Services Webconsole Support"/>
+         <p n="version" t="version" v="1.0.2"/>
+         <p n="manifestversion" v="2"/>
+      </capability>
+      <require name="package" filter="(&amp;(package=com.pavlovmedia.oss.jaxrs.publisher.api)(&amp;(version&gt;=1.0.0)(!(version&gt;=2.0.0))))" extend="false" multiple="false" optional="false">Import package com.pavlovmedia.oss.jaxrs.publisher.api</require>
+      <require name="package" filter="(&amp;(package=javax.servlet)(&amp;(version&gt;=3.1.0)(!(version&gt;=4.0.0))))" extend="false" multiple="false" optional="false">Import package javax.servlet</require>
+      <require name="package" filter="(&amp;(package=javax.servlet.http)(&amp;(version&gt;=3.1.0)(!(version&gt;=4.0.0))))" extend="false" multiple="false" optional="false">Import package javax.servlet.http</require>
+      <require name="package" filter="(&amp;(package=javax.ws.rs.core)(&amp;(version&gt;=2.0.0)(!(version&gt;=3.0.0))))" extend="false" multiple="false" optional="false">Import package javax.ws.rs.core</require>
+      <require name="package" filter="(&amp;(package=org.apache.felix.webconsole)(&amp;(version&gt;=3.2.0)(!(version&gt;=4.0.0))))" extend="false" multiple="false" optional="false">Import package org.apache.felix.webconsole</require>
+   </resource>
+</repository>

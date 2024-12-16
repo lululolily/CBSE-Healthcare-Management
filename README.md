@@ -1,55 +1,74 @@
-# Healthcare Management Project
+# **Healthcare Management Project**
 
-This repository contains two components:
-1. **Spring Boot Component**: A RESTful API built using Spring Boot.
-2. **OSGi Component**: A modular service-based application.
-
----
+Branch: OSGI
 
 ## **Getting Started**
 
-### Prerequisites
+### Dependencies
 
-Ensure you have this Java version installed:
-- **Java 23** 
+* Java SE 11
+* Apache Felix
+* Apache Maven
+* Docker (containerised)
 
-Ensure you have these extensions installed in your VSC:
-- Spring Initializr Java Support 
-- Spring Boot Tools 
-- Spring Boot Extension pack
-- Refer `https://www.geeksforgeeks.org/how-to-build-spring-boot-project-in-vscode/`
+### **Prerequisites**
+
+1. **Docker**
+
+   As the Java requirements are quite outdated, the program is packaged inside a Docker container for ease of use.
 
 ---
 
-### How To Run
-1. Clone this repository
-2. Build the project with this command `mvn clean install` or `mvn clean compile`
-3. Run and debug the project
-4. Go to `http://localhost:8080/main` to check your code
-5. If you made any updates just click Ctrl+S on the project and reload the website
-6. Hmm..........................
+### **How to Run**
 
-### Reference Documentation
-For further reference, please consider the following sections:
+1. Go to (`cd`) the root directory with the `Dockerfile`.
+2. Build the project container 
 
-* [Official Apache Maven documentation](https://maven.apache.org/guides/index.html)
-* [Spring Boot Maven Plugin Reference Guide](https://docs.spring.io/spring-boot/3.4.0/maven-plugin)
-* [Create an OCI image](https://docs.spring.io/spring-boot/3.4.0/maven-plugin/build-image.html)
-* [Spring Web](https://docs.spring.io/spring-boot/3.4.0/reference/web/servlet.html)
-* [Spring Boot DevTools](https://docs.spring.io/spring-boot/3.4.0/reference/using/devtools.html)
-* [Spring Configuration Processor](https://docs.spring.io/spring-boot/3.4.0/specification/configuration-metadata/annotation-processor.html)
+   ```bash
+   docker build -t test/osgi .
+   ```
 
-### Guides
-The following guides illustrate how to use some features concretely:
+   This will copy the source files to `/usr/osgi` in the container and build `.jar` bundle files for each of the bundle project inside the `target` directory. For example, the project `./booking-api` generates the bundle `.jar` at `./booking-api/target/booking-api-1.0-SNAPSHOT.jar`.
 
-* [Building a RESTful Web Service](https://spring.io/guides/gs/rest-service/)
-* [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content/)
-* [Building REST services with Spring](https://spring.io/guides/tutorials/rest/)
+3. Run the project container and connect to the `bash` terminal in container:
 
-### Maven Parent overrides
+   ```bash
+   docker run -it test/osgi bash
+   ```
 
-Due to Maven's design, elements are inherited from the parent POM to the project POM.
-While most of the inheritance is fine, it also inherits unwanted elements like `<license>` and `<developers>` from the parent.
-To prevent this, the project POM contains empty overrides for these elements.
-If you manually switch to a different parent and actually want the inheritance, you need to remove those overrides.
+4. Start Felix interactive shell
 
+   ```bash
+   java -jar ./bin/felix.jar
+   ```
+
+5. Install the built bundles and note the bundle ID:
+
+    ```
+    [in Felix terminal, shown symbol is g!]
+    install File:/usr/osgi/booking-api/target/booking-api-1.0-SNAPSHOT.jar
+    install File:/usr/osgi/booking-client/target/booking-client-1.0-SNAPSHOT.jar
+    install File:/usr/osgi/booking-impl/target/booking-impl-1.0-SNAPSHOT.jar
+    ```
+
+    A sample terminal might be showing:
+    
+    ```
+    g! install File:/usr/osgi/booking-api/target/booking-api-1.0-SNAPSHOT.jar
+    Bundle ID: 8
+    g! install File:/usr/osgi/booking-client/target/booking-client-1.0-SNAPSHOT.jar
+    Bundle ID: 9
+    g! install File:/usr/osgi/booking-impl/target/booking-impl-1.0-SNAPSHOT.jar
+    Bundle ID: 10
+    ```
+
+6. Load the bundles into OSGI in order:
+
+    ```
+    [in Felix terminal, shown symbol is g!]
+    start 8
+    start 9
+    start 10
+    ```
+
+7. View the terminal output after loading `booking-impl`.

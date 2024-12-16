@@ -1,0 +1,242 @@
+<?xml version="1.0" ?>
+<repository lastmodified="20170601123624.723">
+   <resource id="slf4j.nop/1.8.0.alpha2" symbolicname="slf4j.nop" version="1.8.0.alpha2" presentationname="slf4j-nop" uri="http://repo1.maven.org/maven2/org/slf4j/slf4j-nop/1.8.0-alpha2/slf4j-nop-1.8.0-alpha2.jar">
+      <description>SLF4J NOP Binding</description>
+      <size>7656</size>
+      <capability name="bundle">
+         <p n="symbolicname" v="slf4j.nop"/>
+         <p n="presentationname" v="slf4j-nop"/>
+         <p n="version" t="version" v="1.8.0.alpha2"/>
+         <p n="manifestversion" v="2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.slf4j.nop"/>
+         <p n="version" t="version" v="1.8.0.alpha2"/>
+      </capability>
+      <require name="package" filter="(&amp;(package=org.slf4j)(version&gt;=1.8.0.alpha2))" extend="false" multiple="false" optional="false">Import package org.slf4j</require>
+      <require name="package" filter="(&amp;(package=org.slf4j.spi)(version&gt;=1.8.0.alpha2))" extend="false" multiple="false" optional="false">Import package org.slf4j.spi</require>
+      <require name="package" filter="(&amp;(package=org.slf4j.helpers)(version&gt;=1.8.0.alpha2))" extend="false" multiple="false" optional="false">Import package org.slf4j.helpers</require>
+      <require name="package" filter="(&amp;(package=org.slf4j.event)(version&gt;=1.8.0.alpha2))" extend="false" multiple="false" optional="false">Import package org.slf4j.event</require>
+   </resource>
+   <resource id="slf4j.android/1.7.25" symbolicname="slf4j.android" version="1.7.25" presentationname="slf4j-android" uri="http://repo1.maven.org/maven2/org/slf4j/slf4j-android/1.7.25/slf4j-android-1.7.25.jar">
+      <description>SLF4J Android Binding</description>
+      <size>7340</size>
+      <capability name="bundle">
+         <p n="symbolicname" v="slf4j.android"/>
+         <p n="presentationname" v="slf4j-android"/>
+         <p n="version" t="version" v="1.7.25"/>
+         <p n="manifestversion" v="2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.slf4j.impl"/>
+         <p n="version" t="version" v="1.7.25"/>
+      </capability>
+      <require name="package" filter="(&amp;(package=org.slf4j)(version&gt;=1.7.25))" extend="false" multiple="false" optional="false">Import package org.slf4j</require>
+      <require name="package" filter="(&amp;(package= org.slf4j.spi)(version&gt;=1.7.25))" extend="false" multiple="false" optional="false">Import package  org.slf4j.spi</require>
+      <require name="package" filter="(&amp;(package= org.slf4j.helpers)(version&gt;=1.7.25))" extend="false" multiple="false" optional="false">Import package  org.slf4j.helpers</require>
+   </resource>
+   <resource id="jul.to.slf4j/1.8.0.alpha2" symbolicname="jul.to.slf4j" version="1.8.0.alpha2" presentationname="jul-to-slf4j" uri="http://repo1.maven.org/maven2/org/slf4j/jul-to-slf4j/1.8.0-alpha2/jul-to-slf4j-1.8.0-alpha2.jar">
+      <description>JUL to SLF4J bridge</description>
+      <size>4754</size>
+      <capability name="bundle">
+         <p n="symbolicname" v="jul.to.slf4j"/>
+         <p n="presentationname" v="jul-to-slf4j"/>
+         <p n="version" t="version" v="1.8.0.alpha2"/>
+         <p n="manifestversion" v="2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.slf4j.bridge"/>
+         <p n="version" t="version" v="1.8.0.alpha2"/>
+         <p n="uses:" v="org.slf4j,org.slf4j.spi"/>
+      </capability>
+      <require name="package" filter="(&amp;(package=org.slf4j)(version&gt;=1.8.0.alpha2))" extend="false" multiple="false" optional="false">Import package org.slf4j</require>
+      <require name="package" filter="(&amp;(package=org.slf4j.spi)(version&gt;=1.8.0.alpha2))" extend="false" multiple="false" optional="false">Import package org.slf4j.spi</require>
+   </resource>
+   <resource id="slf4j.simple/1.8.0.alpha2" symbolicname="slf4j.simple" version="1.8.0.alpha2" presentationname="slf4j-simple" uri="http://repo1.maven.org/maven2/org/slf4j/slf4j-simple/1.8.0-alpha2/slf4j-simple-1.8.0-alpha2.jar">
+      <description>SLF4J Simple binding</description>
+      <size>17205</size>
+      <capability name="bundle">
+         <p n="symbolicname" v="slf4j.simple"/>
+         <p n="presentationname" v="slf4j-simple"/>
+         <p n="version" t="version" v="1.8.0.alpha2"/>
+         <p n="manifestversion" v="2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.slf4j.simple"/>
+         <p n="version" t="version" v="1.8.0.alpha2"/>
+      </capability>
+      <require name="package" filter="(&amp;(package=org.slf4j)(version&gt;=1.8.0.alpha2))" extend="false" multiple="false" optional="false">Import package org.slf4j</require>
+      <require name="package" filter="(&amp;(package=org.slf4j.spi)(version&gt;=1.8.0.alpha2))" extend="false" multiple="false" optional="false">Import package org.slf4j.spi</require>
+      <require name="package" filter="(&amp;(package=org.slf4j.helpers)(version&gt;=1.8.0.alpha2))" extend="false" multiple="false" optional="false">Import package org.slf4j.helpers</require>
+      <require name="package" filter="(&amp;(package=org.slf4j.event)(version&gt;=1.8.0.alpha2))" extend="false" multiple="false" optional="false">Import package org.slf4j.event</require>
+   </resource>
+   <resource id="log4j.over.slf4j/1.8.0.alpha2" symbolicname="log4j.over.slf4j" version="1.8.0.alpha2" presentationname="log4j-over-slf4j" uri="http://repo1.maven.org/maven2/org/slf4j/log4j-over-slf4j/1.8.0-alpha2/log4j-over-slf4j-1.8.0-alpha2.jar">
+      <description>Log4j implemented over SLF4J</description>
+      <size>24323</size>
+      <capability name="bundle">
+         <p n="symbolicname" v="log4j.over.slf4j"/>
+         <p n="presentationname" v="log4j-over-slf4j"/>
+         <p n="version" t="version" v="1.8.0.alpha2"/>
+         <p n="manifestversion" v="2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.apache.log4j"/>
+         <p n="version" t="version" v="1.2.17"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.apache.log4j.helpers"/>
+         <p n="version" t="version" v="1.2.17"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.apache.log4j.spi"/>
+         <p n="version" t="version" v="1.2.17"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.apache.log4j.xml"/>
+         <p n="version" t="version" v="1.2.17"/>
+      </capability>
+      <require name="package" filter="(&amp;(package=org.slf4j)(version&gt;=1.6.0))" extend="false" multiple="false" optional="false">Import package org.slf4j</require>
+      <require name="package" filter="(&amp;(package=org.slf4j.helpers)(version&gt;=1.6.0))" extend="false" multiple="false" optional="false">Import package org.slf4j.helpers</require>
+      <require name="package" filter="(&amp;(package=org.slf4j.spi)(version&gt;=1.6.0))" extend="false" multiple="false" optional="false">Import package org.slf4j.spi</require>
+   </resource>
+   <resource id="slf4j.ext/1.8.0.alpha2" symbolicname="slf4j.ext" version="1.8.0.alpha2" presentationname="slf4j-ext" uri="http://repo1.maven.org/maven2/org/slf4j/slf4j-ext/1.8.0-alpha2/slf4j-ext-1.8.0-alpha2.jar">
+      <description>Extensions to the SLF4J API</description>
+      <size>43562</size>
+      <capability name="bundle">
+         <p n="symbolicname" v="slf4j.ext"/>
+         <p n="presentationname" v="slf4j-ext"/>
+         <p n="version" t="version" v="1.8.0.alpha2"/>
+         <p n="manifestversion" v="2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.slf4j.profiler"/>
+         <p n="version" t="version" v="1.8.0.alpha2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v=" org.slf4j.cal10n"/>
+         <p n="version" t="version" v="1.8.0.alpha2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v=" org.slf4j.ext"/>
+         <p n="version" t="version" v="1.8.0.alpha2"/>
+      </capability>
+      <require name="package" filter="(&amp;(package=org.slf4j)(version&gt;=1.8.0.alpha2))" extend="false" multiple="false" optional="false">Import package org.slf4j</require>
+      <require name="package" filter="(&amp;(package= org.slf4j.spi)(version&gt;=1.8.0.alpha2))" extend="false" multiple="false" optional="false">Import package  org.slf4j.spi</require>
+      <require name="package" filter="(&amp;(package= org.slf4j.helpers)(version&gt;=1.8.0.alpha2))" extend="false" multiple="false" optional="false">Import package  org.slf4j.helpers</require>
+      <require name="package" filter="(&amp;(package= ch.qos.cal10n)(version&gt;=0.8.1))" extend="false" multiple="false" optional="false">Import package  ch.qos.cal10n</require>
+   </resource>
+   <resource id="slf4j.jcl/1.7.25" symbolicname="slf4j.jcl" version="1.7.25" presentationname="slf4j-jcl" uri="http://repo1.maven.org/maven2/org/slf4j/slf4j-jcl/1.7.25/slf4j-jcl-1.7.25.jar">
+      <description>SLF4J JCL Binding</description>
+      <size>6983</size>
+      <capability name="bundle">
+         <p n="symbolicname" v="slf4j.jcl"/>
+         <p n="presentationname" v="slf4j-jcl"/>
+         <p n="version" t="version" v="1.7.25"/>
+         <p n="manifestversion" v="2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.slf4j.impl"/>
+         <p n="version" t="version" v="1.7.25"/>
+      </capability>
+      <require name="package" filter="(&amp;(package=org.slf4j.spi)(version&gt;=1.7.25))" extend="false" multiple="false" optional="false">Import package org.slf4j.spi</require>
+      <require name="package" filter="(&amp;(package= org.slf4j.helpers)(version&gt;=1.7.25))" extend="false" multiple="false" optional="false">Import package  org.slf4j.helpers</require>
+      <require name="package" filter="(&amp;(package= org.apache.commons.logging)(version&gt;=0.0.0))" extend="false" multiple="false" optional="false">Import package  org.apache.commons.logging</require>
+   </resource>
+   <resource id="slf4j.log4j12/1.8.0.alpha2" symbolicname="slf4j.log4j12" version="1.8.0.alpha2" presentationname="slf4j-log4j12" uri="http://repo1.maven.org/maven2/org/slf4j/slf4j-log4j12/1.8.0-alpha2/slf4j-log4j12-1.8.0-alpha2.jar">
+      <description>SLF4J LOG4J-12 Binding</description>
+      <size>14776</size>
+      <capability name="bundle">
+         <p n="symbolicname" v="slf4j.log4j12"/>
+         <p n="presentationname" v="slf4j-log4j12"/>
+         <p n="version" t="version" v="1.8.0.alpha2"/>
+         <p n="manifestversion" v="2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.slf4j.log4j12"/>
+         <p n="version" t="version" v="1.8.0.alpha2"/>
+      </capability>
+      <require name="package" filter="(&amp;(package=org.slf4j)(version&gt;=1.8.0.alpha2))" extend="false" multiple="false" optional="false">Import package org.slf4j</require>
+      <require name="package" filter="(&amp;(package=org.slf4j.spi)(version&gt;=1.8.0.alpha2))" extend="false" multiple="false" optional="false">Import package org.slf4j.spi</require>
+      <require name="package" filter="(&amp;(package=org.slf4j.helpers)(version&gt;=1.8.0.alpha2))" extend="false" multiple="false" optional="false">Import package org.slf4j.helpers</require>
+      <require name="package" filter="(&amp;(package=org.slf4j.event)(version&gt;=1.8.0.alpha2))" extend="false" multiple="false" optional="false">Import package org.slf4j.event</require>
+      <require name="package" filter="(&amp;(package=org.apache.log4j)(version&gt;=0.0.0))" extend="false" multiple="false" optional="false">Import package org.apache.log4j</require>
+   </resource>
+   <resource id="jcl.over.slf4j/1.8.0.alpha2" symbolicname="jcl.over.slf4j" version="1.8.0.alpha2" presentationname="jcl-over-slf4j" uri="http://repo1.maven.org/maven2/org/slf4j/jcl-over-slf4j/1.8.0-alpha2/jcl-over-slf4j-1.8.0-alpha2.jar">
+      <description>JCL 1.2 implemented over SLF4J</description>
+      <size>17134</size>
+      <capability name="bundle">
+         <p n="symbolicname" v="jcl.over.slf4j"/>
+         <p n="presentationname" v="jcl-over-slf4j"/>
+         <p n="version" t="version" v="1.8.0.alpha2"/>
+         <p n="manifestversion" v="2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.apache.commons.logging"/>
+         <p n="version" t="version" v="1.2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="  org.apache.commons.logging.impl"/>
+         <p n="version" t="version" v="1.2"/>
+      </capability>
+      <require name="package" filter="(&amp;(package=org.slf4j)(version&gt;=1.8.0.alpha2))" extend="false" multiple="false" optional="false">Import package org.slf4j</require>
+      <require name="package" filter="(&amp;(package= org.slf4j.spi)(version&gt;=1.8.0.alpha2))" extend="false" multiple="false" optional="false">Import package  org.slf4j.spi</require>
+   </resource>
+   <resource id="slf4j.jdk14/1.8.0.alpha2" symbolicname="slf4j.jdk14" version="1.8.0.alpha2" presentationname="slf4j-jdk14" uri="http://repo1.maven.org/maven2/org/slf4j/slf4j-jdk14/1.8.0-alpha2/slf4j-jdk14-1.8.0-alpha2.jar">
+      <description>SLF4J JDK14 Binding</description>
+      <size>10168</size>
+      <capability name="bundle">
+         <p n="symbolicname" v="slf4j.jdk14"/>
+         <p n="presentationname" v="slf4j-jdk14"/>
+         <p n="version" t="version" v="1.8.0.alpha2"/>
+         <p n="manifestversion" v="2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.slf4j.jul"/>
+         <p n="version" t="version" v="1.8.0.alpha2"/>
+      </capability>
+      <require name="package" filter="(&amp;(package=org.slf4j)(version&gt;=1.8.0.alpha2))" extend="false" multiple="false" optional="false">Import package org.slf4j</require>
+      <require name="package" filter="(&amp;(package=org.slf4j.spi)(version&gt;=1.8.0.alpha2))" extend="false" multiple="false" optional="false">Import package org.slf4j.spi</require>
+      <require name="package" filter="(&amp;(package=org.slf4j.helpers)(version&gt;=1.8.0.alpha2))" extend="false" multiple="false" optional="false">Import package org.slf4j.helpers</require>
+      <require name="package" filter="(&amp;(package=org.slf4j.event)(version&gt;=1.8.0.alpha2))" extend="false" multiple="false" optional="false">Import package org.slf4j.event</require>
+   </resource>
+   <resource id="org.slf4j.osgi-over-slf4j/1.8.0.alpha2" symbolicname="org.slf4j.osgi-over-slf4j" version="1.8.0.alpha2" presentationname="OSGi LogService implemented over SLF4J" uri="http://repo1.maven.org/maven2/org/slf4j/osgi-over-slf4j/1.8.0-alpha2/osgi-over-slf4j-1.8.0-alpha2.jar">
+      <description>OSGi LogService implementation over SLF4J</description>
+      <size>5575</size>
+      <category id="osgi"/>
+      <capability name="bundle">
+         <p n="symbolicname" v="org.slf4j.osgi-over-slf4j"/>
+         <p n="presentationname" v="OSGi LogService implemented over SLF4J"/>
+         <p n="version" t="version" v="1.8.0.alpha2"/>
+         <p n="manifestversion" v="2"/>
+      </capability>
+      <require name="package" filter="(&amp;(package=org.osgi.framework)(&amp;(version&gt;=1.5.0)(!(version&gt;=2.0.0))))" extend="false" multiple="false" optional="false">Import package org.osgi.framework</require>
+      <require name="package" filter="(&amp;(package=org.osgi.service.log)(&amp;(version&gt;=1.3.0)(!(version&gt;=2.0.0))))" extend="false" multiple="false" optional="false">Import package org.osgi.service.log</require>
+      <require name="package" filter="(&amp;(package=org.slf4j)(version&gt;=1.8.0.alpha2))" extend="false" multiple="false" optional="false">Import package org.slf4j</require>
+   </resource>
+   <resource id="slf4j.api/1.8.0.alpha2" symbolicname="slf4j.api" version="1.8.0.alpha2" presentationname="slf4j-api" uri="http://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.8.0-alpha2/slf4j-api-1.8.0-alpha2.jar">
+      <description>The slf4j API</description>
+      <size>43917</size>
+      <capability name="bundle">
+         <p n="symbolicname" v="slf4j.api"/>
+         <p n="presentationname" v="slf4j-api"/>
+         <p n="version" t="version" v="1.8.0.alpha2"/>
+         <p n="manifestversion" v="2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v="org.slf4j"/>
+         <p n="version" t="version" v="1.8.0.alpha2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v=" org.slf4j.spi"/>
+         <p n="version" t="version" v="1.8.0.alpha2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v=" org.slf4j.helpers"/>
+         <p n="version" t="version" v="1.8.0.alpha2"/>
+      </capability>
+      <capability name="package">
+         <p n="package" v=" org.slf4j.event"/>
+         <p n="version" t="version" v="1.8.0.alpha2"/>
+      </capability>
+   </resource>
+</repository>
