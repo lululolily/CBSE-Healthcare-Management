@@ -21,14 +21,32 @@ public class DoctorService implements IManageDoctor {
     }
 
     public void updateDoctorProfile(Long id, DoctorDTO doctorDTO) {
-        Doctor doctor = doctorRepository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Doctor not found"));
+    Doctor doctor = doctorRepository.findById(id)
+            .orElseThrow(() -> new RuntimeException("Doctor not found"));
+
+    // Update only non-null fields from DoctorDTO
+    if (doctorDTO.getFirstName() != null) {
         doctor.setFirstName(doctorDTO.getFirstName());
-        doctor.setLastName(doctorDTO.getLastName());
-        doctor.setContactNumber(doctorDTO.getContactNumber());
-        doctor.setSpecialization(doctorDTO.getSpecialization());
-        doctorRepository.save(doctor);
     }
+    if (doctorDTO.getLastName() != null) {
+        doctor.setLastName(doctorDTO.getLastName());
+    }
+    if (doctorDTO.getContactNumber() != null) {
+        doctor.setContactNumber(doctorDTO.getContactNumber());
+    }
+    if (doctorDTO.getSpecialization() != null) {
+        doctor.setSpecialization(doctorDTO.getSpecialization());
+    }
+    if (doctorDTO.getWorkingHoursStart() != null) {
+        doctor.setWorkingHoursStart(doctorDTO.getWorkingHoursStart());
+    }
+    if (doctorDTO.getWorkingHoursEnd() != null) {
+        doctor.setWorkingHoursEnd(doctorDTO.getWorkingHoursEnd());
+    }
+
+    doctorRepository.save(doctor);
+}
+
 
     public List<Doctor> getDoctorsBySpecialization(String specialization) {
         return doctorRepository.findBySpecialization(specialization);
