@@ -13,14 +13,13 @@ public class BookingServiceImpl implements BookingService {
     private final List<Appointment> appointments = new ArrayList<>();
     
     public BookingServiceImpl() {
-        // Pre-create an appointment for tomorrow (2024-12-18 11:00)
         Appointment tomorrowAppointment = new Appointment(
             UUID.randomUUID().toString(),
             "Dr. Ali Akar",
             "Jenuine Lee",
             "I am sick",
             "sick",
-            "2024-12-18 11:00"
+            "2024-12-19 11:00"
         );
         
         // Add to the appointments list
@@ -109,9 +108,6 @@ public class BookingServiceImpl implements BookingService {
         System.out.println("Unavailable from: " + unavailabilityFrom);
         System.out.println("Unavailable to: " + unavailabilityTo);
         System.out.println("==============================\n");
-
-        // You could save these details in a list or database, for example.
-        // Here, we're just printing out the values to demonstrate the method functionality.
     }
     
     @Override
